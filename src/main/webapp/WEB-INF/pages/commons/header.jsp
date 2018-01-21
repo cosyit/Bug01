@@ -11,9 +11,9 @@
 
         <!--LOGO-->
         <div class="hp-logo fl"><!--1. LOGO -->
-            <a href="首页" class="logo">
-                <img src="images/blogease.png" alt="木木博客" width="60" height="60"/>
-                <span>博客</span>
+            <a href="PortalServlet/index" class="logo">
+                <img src="images/blogease.png" alt="魔幻博客" width="60" height="56"/>
+                <span>My博客</span>
             </a>
         </div>
 

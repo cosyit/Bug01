@@ -1,4 +1,4 @@
-﻿
+﻿﻿﻿
 /*$(function () {});*/
 //uncaught ReferenceError: $ is not defined 没找到问题哦！ 找到了！async defer 这个在放在<script标签末尾影响了。
 $(document).ready(function () {
