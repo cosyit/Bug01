@@ -17,7 +17,7 @@ a {
 }
 
 /*body 似乎更有效。加上之后，文字不可选了。*/
-body,input,textarea {
+body, input, textarea {
     -moz-user-select: none; /*火狐*/
     -webkit-user-select: none; /*webkit浏览器*/
     -ms-user-select: none; /*IE10*/
@@ -25,8 +25,14 @@ body,input,textarea {
     user-select: none;
 }
 
-.fl{float: left;}
-.fr{float: right;}
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
 /*自定义字体*/
 @font-face {
     font-family: "mumu";
@@ -35,15 +41,25 @@ body,input,textarea {
 
 /*定义关键帧*/
 @-webkit-keyframes moving {
-    0% {transform:rotate(0deg);}
-    100%{transform:rotate(360deg);}
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
+
 /*使用关键帧*/
-.r{-webkit-animation:moving 5s linear infinite;border-radius:215px;transform-origin:23px 25px;} /*linear:线性变化,ease 中间快*/
+.r {
+    -webkit-animation: moving 5s linear infinite;
+    border-radius: 215px;
+    transform-origin: 23px 25px;
+}
 
+/*linear:线性变化,ease 中间快*/
 
-@media screen and (max-width: 1200px){
-    body{
+@media screen and (max-width: 1200px) {
+    body {
         background: bisque;
     }
 }
