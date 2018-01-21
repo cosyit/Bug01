@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/loginbox.css">
-    <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_516817_yciqkobhzqqto6r.css">
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_516817_yciqkobhzqqto6r.css">
 </head>
 <body>
 

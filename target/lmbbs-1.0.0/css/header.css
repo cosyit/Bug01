@@ -101,7 +101,7 @@ header .header-panel .hp-user ul li {
 
 /*消息提示*/
 #msg_tip{
-	background: lightblue;line-height: 60px;text-align: center;
+	background: #7ce660;line-height: 60px;text-align: center;
 	position: fixed;
 	top:-60px;
 	left: 0;

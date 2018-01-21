@@ -9,10 +9,10 @@ var mmMessage={
     tip:function (msg) {
         $("#msg_tip").remove();
         $("body").append("<div id='msg_tip'>" +
-            "        <span>  <i class='iconfont icon-sousuo'></i> "+msg+" </span>" +
+            "        <span>  <i class='iconfont icon-wodefankui' style='font-size: 28px;margin-right: 28px'></i> "+msg+" </span>" +
             "    </div>");
 
-        $("#msg_tip").animate({top:0},800).delay(1000).animate({top:-60},600);
+        $("#msg_tip").animate({top:0},800).delay(1000).animate({top:-64},600);
     }
 };
 
@@ -193,14 +193,14 @@ var mmlogin={
     ,
     //未登录视图
     unloggedView:"<li></li>" +
-    "<li><a href='javascript:void(0)' onclick='mmlogin.iwantlogin()'> <i class='iconfont icon-sousuo'></i>登录</a></li>" +
-    "<li><a href='javascript:void(0)' onclick='mmlogin.logout()'>  <i class='iconfont icon-sousuo'></i>注册</a></li>" +
+    "<li><a href='javascript:void(0)' onclick='mmlogin.iwantlogin()'> <i class='iconfont icon-shenfenzheng'  style='font-size: 25px'></i></a></li>" +
+    "<li><a href='javascript:void(0)' >  <i class='iconfont icon-yijianfankui' style='font-size: 25px'></i></a></li>" +
     "<li></li>"
     ,
 
     //登录视图
-    loggedView:"<li><i class='iconfont icon-sousuo'></i>消息 </li>" +
+    loggedView:"<li><i class='iconfont icon-wodefankui'  style='font-size: 25px'></i></li>" +
     "<li><a href='可去个人中心' class='login_txtinfo_username'></a></li>" +
-    "<li><i class='iconfont icon-sousuo'></i>笔记</li>" +
-    "<li><a href='javascript:void(0)' onclick='mmlogin.logout()'><i class='iconfont icon-sousuo'></i>退出</a></li>"
+    "<li><i class='iconfont icon-shouhuodizhiyebianji'  style='font-size: 25px'></i></li>" +
+    "<li><a href='javascript:void(0)' onclick='mmlogin.logout()' ><i class='iconfont icon-cuowu'  style='font-size: 25px'></i></a></li>"
 }

@@ -15,20 +15,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ff5a538f-bbcb-4c1d-bcbb-bf1cf8b46a19" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/servlet/UserServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/servlet/UserServlet.java" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/common.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/common.css" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/header.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/header.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/登录框标签快速生成方式" afterPath="$PROJECT_DIR$/src/main/webapp/js/登录框标签快速生成方式" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cosyit/lmbbs/web/servlet/UserServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/cosyit/lmbbs/web/servlet/UserServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/classes/com/cosyit/lmbbs/web/servlet/UserServlet.class" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/classes/com/cosyit/lmbbs/web/servlet/UserServlet.class" />
+      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0.war" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0.war" />
       <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/portal/index.jsp" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/portal/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/css/common.css" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/css/common.css" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/index.jsp" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/css/header.css" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/css/header.css" />
       <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/mmjs_userlogin.js" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/mmjs_userlogin.js" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/登录框标签快速生成方式" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/登录框标签快速生成方式" />
       <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/log.txt" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/log.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,7 +36,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/lmbbs$lmbbs_tomcat.coverage" NAME="lmbbs_tomcat Coverage Results" MODIFIED="1516546128632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/lmbbs$lmbbs_tomcat.coverage" NAME="lmbbs_tomcat Coverage Results" MODIFIED="1516550241451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -78,8 +71,45 @@
       <file leaf-file-name="mmjs_userlogin.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="148" column="35" lean-forward="false" selection-start-line="148" selection-start-column="35" selection-end-line="148" selection-end-column="35" />
+            <state relative-caret-position="294">
+              <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+              <folding>
+                <marker date="1516550894530" expanded="true" signature="387:421" ph="..." />
+                <marker date="1516550894530" expanded="true" signature="7301:7316" ph="..." />
+                <marker date="1516550894530" expanded="true" signature="7421:7436" ph="..." />
+                <marker date="1516550894530" expanded="true" signature="7553:7568" ph="..." />
+                <marker date="1516550894530" expanded="true" signature="7716:7731" ph="..." />
+                <marker date="1516550894530" expanded="true" signature="7851:7866" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/header.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="109" column="1" lean-forward="false" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="47" column="42" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -206,7 +236,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="380" />
     <option name="y" value="152" />
     <option name="width" value="1305" />
@@ -296,14 +326,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
@@ -505,6 +527,7 @@
     </configuration>
     <configuration name="lmbbs_tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.2" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
@@ -636,7 +659,7 @@
       <workItem from="1516469822761" duration="4619000" />
       <workItem from="1516511050806" duration="6033000" />
       <workItem from="1516520027095" duration="15814000" />
-      <workItem from="1516539671589" duration="7549000" />
+      <workItem from="1516539671589" duration="11160000" />
     </task>
     <servers />
   </component>
@@ -673,7 +696,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234641000" />
+    <option name="totallyTimeSpent" value="238252000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -685,7 +708,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -696,8 +719,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32671082" sideWeight="0.50292397" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32808718" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12726304" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34888887" sideWeight="0.6795407" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34888887" sideWeight="0.6795407" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5058651" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291714" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -706,9 +730,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26291695" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18961039" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.4941349" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24222222" sideWeight="0.4926931" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24222222" sideWeight="0.4926931" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24941543" sideWeight="0.50869566" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1160,14 +1184,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/phrase.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -1178,25 +1194,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-309">
-          <caret line="17" column="65" lean-forward="true" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+        <state relative-caret-position="168">
+          <caret line="47" column="42" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/header.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="109" column="1" lean-forward="true" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
+        <state relative-caret-position="482">
+          <caret line="109" column="1" lean-forward="false" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="148" column="35" lean-forward="false" selection-start-line="148" selection-start-column="35" selection-end-line="148" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="294">
+          <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+          <folding>
+            <marker date="1516550894530" expanded="true" signature="387:421" ph="..." />
+            <marker date="1516550894530" expanded="true" signature="7301:7316" ph="..." />
+            <marker date="1516550894530" expanded="true" signature="7421:7436" ph="..." />
+            <marker date="1516550894530" expanded="true" signature="7553:7568" ph="..." />
+            <marker date="1516550894530" expanded="true" signature="7716:7731" ph="..." />
+            <marker date="1516550894530" expanded="true" signature="7851:7866" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
