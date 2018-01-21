@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8"  pageEncoding="UTF-8" %>
 <%--
         先写 HTML在body中看效果，然后，用转字符串工具，放入JS。
     <div id="massage_tip">
