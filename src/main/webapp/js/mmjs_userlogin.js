@@ -1,47 +1,44 @@
 ﻿$(function () {
-    mmlogin.loginSuccess();
-    mmlogin.logout();
+    mmlogin.query_the_login_status_to_the_server();
 });
 
 
-//JS语言中，一个类的对象和属性是不分上下顺序的。
+/**
+    1.JS语言中，一个类的对象和属性是不分上下顺序的。
+    2.因为首页需要做静态化处理，首页是不能写<c:if >这样的动态标签的，所以要做静态化的问题。
+
+ */
+
 var mmlogin={
-    //因为要做静态化，首页是不能写<c:if >这样的动态判断，所以要做静态化的问题。
-    logout:function(){
-        //退出的时候，触发标签上的函数，发送一个Ajax
+    logout:function(){//退出的时候，触发标签上的函数，发送一个Ajax
         $.ajax({
             type:"POST",
             url:"UserServlet/logout",
             success:function(data){
                 //退出请求， 响应成功。
                 if(data=="success"){
-
-                    var html="<li></li>" +
-                        "<li><a href='javascript:void(0)' onclick='mmlogin.login()'>登录</a></li>\n" +
-                        "<li><a href='javascript:void(0)' onclick='mmlogin.logout()'>注册</a></li>\n" +
-                        "<li></li>";
-
-                    $("#login_view_container").html(html);
+                    $("#login_view_container").html(mmlogin.unloggedView);
                 }
             }
-
-
         });
-
     },
-    loginSuccess:function(){
+
+    //向服务器查询登陆状态。
+    query_the_login_status_to_the_server:function(){
         $.ajax({
             type:"POST",
-            url:"haslogged",
-
-
-
-
+            url:"UserServlet/haslogged",
+            success:function (data) {//默认是一个'n'+'u'+'l'+'l' 的null字符串
+                if(data!="null"){
+                var userInfo = JSON.parse(data);
+                $("#login_view_container").html(mmlogin.loggedView);
+                $(".login_txtinfo_username").html(userInfo.loginName);
+                }
+                else{
+                    $("#login_view_container").html(mmlogin.unloggedView);
+                }
+            }
         });
-
-
-
-        $("#login_view_container").html(mmlogin.loggedView);
     },
     login:function(){
         $("login_dialog").remove();
@@ -117,7 +114,7 @@ var mmlogin={
                             alert("登录成功！欢迎你，木木！")
                             $("#login_dialog").next().trigger('click');//点击它的旁边区域，让登录框消失。
 
-                            mmlogin.loginSuccess();
+                            mmlogin.query_the_login_status_to_the_server();
                             //trigger() 触发事件 --规定被选元素要触发的事件
                             //更改用户信息。
                         }
@@ -137,11 +134,12 @@ var mmlogin={
             };
     },
 
+    //想登录时弹出的登录框
     wangToLoginView:"<div id='login_dialog'>"+
     "    <div class='mid_position'>"+
     "        <div class='logo m8-w240-h40'></div>"+
     "        <div class='content_typing_u m8-w240-h40'>"+
-    "            <span class='login_txtinfo'>用户</span><input type='text' class='username login_input_style' name='username' value='mumu' placeholder='请输入用户名...'>"+
+    "            <span class='login_txtinfo'>用户</span><input type='text' class='username login_input_style' name='username' value='mm' placeholder='请输入用户名...'>"+
     "        </div>"+
     "        <div class='content_typing_pw m8-w240-h40'>"+
     "            <span class='login_txtinfo'>密码</span><input type='password' class='password login_input_style' name='password' value='mumu'>"+
@@ -174,13 +172,14 @@ var mmlogin={
     ,
     //未登录视图
     unloggedView:"<li></li>" +
-    "<li><a href='javascript:void(0)' onclick='mmlogin.login()'>登录</a></li>\n" +
-    "<li><a href='javascript:void(0)' onclick='mmlogin.logout()'>注册</a></li>\n" +
+    "<li><a href='javascript:void(0)' onclick='mmlogin.login()'>登录</a></li>" +
+    "<li><a href='javascript:void(0)' onclick='mmlogin.logout()'>注册</a></li>" +
     "<li></li>"
     ,
+
     //登录视图
-    loggedView:"<li>消息 </li>\n" +
-        "                    <li><a href='可去个人中心'>木木</a></li>\n" +
-        "                    <li>写</li>\n" +
-        "                    <li><a href='javascript:void(0)' onclick='mmlogin.logout()'>退出</a></li>"
+    loggedView:"<li>消息 </li>" +
+    "<li><a href='可去个人中心' class='login_txtinfo_username'></a></li>" +
+    "<li>写</li>" +
+    "<li><a href='javascript:void(0)' onclick='mmlogin.logout()'>退出</a></li>"
 }

@@ -56,20 +56,20 @@
         <!--4. 用户登录注册 -->
         <div class="hp-user fl">
             <ul id="login_view_container">
-              <%-- 为了静态化。动态内容舍弃
-               <c:if test="${ SESSION_LOGGED_ON_USER eq null}" var="ISHASSESSION">
-                    <li></li>
-                    <li><a href="javascript:void(0)" onclick="mmlogin.login()">登录</a></li>
-                    <li><a href="javascript:void(0)" onclick="mmlogin.logout()">注册</a></li>
-                    <li></li>
-                </c:if>
+                <%-- 为了静态化。这种动态内容舍弃
+ <c:if test="${ SESSION_LOGGED_ON_USER eq null}" var="ISHASSESSION">
+      <li></li>
+      <li><a href="javascript:void(0)" onclick="mmlogin.login()">登录</a></li>
+      <li><a href="javascript:void(0)" onclick="mmlogin.logout()">注册</a></li>
+      <li></li>
+  </c:if>
 
-                <c:if test="${!ISHASSESSION}">
-                    <li>消息图标 </li>
-                    <li><a href="可去个人中心"></a>用户像${user.avanda}</li>
-                    <li>写博客的图标</li>
-                    <li><a href="javascript:void(0)" onclick="mmlogin.logout()">退出</a></li>
-                </c:if>--%>
+  <c:if test="${!ISHASSESSION}">
+      <li>消息图标 </li>
+      <li><a href="去个人中心"></a>用户像${user.avanda}</li>
+      <li>写博客的图标</li>
+      <li><a href="javascript:void(0)" onclick="mmlogin.logout()">退出</a></li>
+  </c:if>--%>
             </ul>
         </div>
     </div>

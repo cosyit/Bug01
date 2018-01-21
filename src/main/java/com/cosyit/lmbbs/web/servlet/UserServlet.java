@@ -6,6 +6,10 @@ import com.cosyit.lmbbs.service.interfaces.UserService;
 import com.cosyit.lmbbs.util.commons.MmStringUtils;
 import com.cosyit.lmbbs.util.web.MemberAutoLoginCookieUtil;
 import com.cosyit.lmbbs.util.web.WebContaints;
+import jdk.nashorn.api.scripting.AbstractJSObject;
+import org.apache.struts2.json.JSONException;
+import org.apache.struts2.json.JSONUtil;
+import org.apache.struts2.json.annotations.JSON;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -45,21 +49,21 @@ public class UserServlet extends HttpServlet {
             login(request, response);
         }
 
-        if("logout".equals(action)){
-            logout(request,response);
+        if ("logout".equals(action)) {
+            logout(request, response);
         }
 
-        if("haslogged".equals(action)){
-            hasLoggedOn(request,response);
+        if ("haslogged".equals(action)) {
+            hasLoggedOn(request, response);
         }
     }
 
     private void logout(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //销毁session后去论坛首页
-        HttpSession session=request.getSession();
+        HttpSession session = request.getSession();
 
         session.invalidate();//会话失效
-
+        System.out.println("会话已经失效。");
         response.getWriter().print("success");
 
     }
@@ -86,33 +90,46 @@ public class UserServlet extends HttpServlet {
         }
 
         //通过我们的当前类的属性user业务对象。来做业务。
-        User user=userService.findByLoginNameAndPassword(username, password);
+        User user = userService.findByLoginNameAndPassword(username, password);
         System.out.println(user);
 
         HttpSession session = request.getSession();
 
         //+"==="+verfi_typing 先不做验证，浪费测试时间。测试阶段先写固定值。。
         if (user == null) {
-            session.setAttribute("message","fail");
+            session.setAttribute("message", "fail");
             System.out.println("不存在此用户...");
             out.print(session.getAttribute("message"));
-        }
-       else if(user.isLocked()){
-            session.setAttribute("massage","locked");
+        } else if (user.isLocked()) {
+            session.setAttribute("massage", "locked");
             out.print(session.getAttribute("message"));
-    }
-       if(user != null ) {
-            session.setAttribute("message","success");
+        }
+        if (user != null) {
+            session.setAttribute("message", "success");
             System.out.println("验证成功！");
-            session.setAttribute("user",user);
+            session.setAttribute("user", user);
 
             out.print(session.getAttribute("message"));
         }
     }
 
-    private User hasLoggedOn(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-        User user=(User)request.getSession().getAttribute("user");
-       // response.getWriter().print(user==null?"unlogged":"logged"); 不需要这样，返回用户名。
-        return user;
+
+    //仿spring的@ResponseBody注解返回json数据给前端的原理。
+    private void hasLoggedOn(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        User user = (User) request.getSession().getAttribute("user");
+        // response.getWriter().print(user==null?"unlogged":"logged"); 不需要这样，返回用户名。
+        String user_jsonString = null;
+        PrintWriter writer = response.getWriter();
+        try {
+            user_jsonString = JSONUtil.serialize(user);
+
+            if (user_jsonString == null || user_jsonString.equals("")) {
+
+            } else {
+                writer.print(user_jsonString);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -17,3 +17,44 @@
 
  * @type {{login: mmlogin.login}}
  */
+
+
+使用emmet程序可生成类似以下的标签骨架。
+这是js中的想登录视图的全貌。
+/*
+<div id="login_dialog">
+    <div class="mid_position">
+        <div class="logo m8-w240-h40"></div>
+        <div class="content_typing_u m8-w240-h40">
+            <span class="login_txtinfo">用户</span><input type="text" class="username login_input_style">
+        </div>
+        <div class="content_typing_pw m8-w240-h40">
+            <span class="login_txtinfo">密码</span><input type="text" class="password login_input_style">
+        </div>
+        <div class="verification m8-w240-h40">
+            <span class="login_txtinfo">验证</span><input type="text" class="verfi_typing login_input_style">
+        </div>
+        <div class="verification m8-w240-h40">
+            <div class="verify_img fl">
+                <img src="images/myblog.png" alt="验证码" width="120" height="32"/>
+            </div>
+            <div class="change_btn fl">
+                <a href="#">换图</a>
+            </div>
+
+        </div>
+        <div class="m8-w240-h40" >
+            <div class="submit_btn">登录</div>
+            <div class="autologins_7days">
+                <input type="checkbox">
+                <span>自动登录</span>
+            </div>
+        </div>
+        <div class="m8-w240-h40">
+            没有账号？<a href="">注册</a>
+        </div>
+    </div>
+</div>
+<!--弹窗遮罩层-->
+<div class="dialog_over"></div>
+* */
