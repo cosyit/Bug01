@@ -8,12 +8,19 @@
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/pom.xml" line="148" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/dao/base/DaoSupport.java" line="45" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/css/common.css" line="21" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/css/common.css" line="22" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/tag/MyFirstTag.java" line="14" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/servlet/UserServlet.java" line="71" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff5a538f-bbcb-4c1d-bcbb-bf1cf8b46a19" name="Default" comment="" />
+    <list default="true" id="ff5a538f-bbcb-4c1d-bcbb-bf1cf8b46a19" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/avatar/mmheader.jpg" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/common.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/common.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js" />
+      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/css/common.css" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/css/common.css" />
+      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/mmjs_userlogin.js" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/mmjs_userlogin.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="F:/apprentice/code/web01/target/" />
@@ -55,16 +62,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/servlet/UserServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -75,31 +72,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mmjs_userlogin.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mmjs_userlogin.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+            <state relative-caret-position="-827">
+              <caret line="37" column="77" lean-forward="false" selection-start-line="37" selection-start-column="77" selection-end-line="37" selection-end-column="77" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="myblog.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/images/myblog.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
               <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lm_user" pinned="false" current-in-tab="false">
-        <entry file="das://table:/4ad75d7d/c397ef44-7cf3-4d81-a949-549e5c893e82/lmbbs.lm_user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -141,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/tag/MyFirstTag.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/mm_util.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/fundamentals/aop/Hello.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fundamentals/aop/HelloProxy.java" />
@@ -191,6 +185,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/servlet/UserServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/common.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js" />
       </list>
     </option>
@@ -225,9 +220,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="307" />
+    <option name="x" value="131" />
+    <option name="y" value="10" />
     <option name="width" value="1587" />
-    <option name="height" value="1040" />
+    <option name="height" value="1082" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -302,67 +298,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -404,11 +339,11 @@
       <recent name="com.fundamentals.aop.v2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\lovecode\lmbbs\src\main\webapp\images\avatar" />
       <recent name="F:\Resource\Desktop\lmbbs\src\main\webapp\WEB-INF" />
       <recent name="F:\Resource\Desktop\lmbbs\src\main\resources" />
       <recent name="F:\Resource\Desktop\lmbbs\src\main\webapp\WEB-INF\classes" />
       <recent name="F:\Resource\Desktop\lmbbs\src\main\webapp\js" />
-      <recent name="F:\Resource\Desktop\lmbbs\src\main\webapp\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -660,7 +595,7 @@
       <workItem from="1516462308628" duration="6748000" />
       <workItem from="1516469822761" duration="4619000" />
       <workItem from="1516511050806" duration="6033000" />
-      <workItem from="1516520027095" duration="12390000" />
+      <workItem from="1516520027095" duration="15453000" />
     </task>
     <servers />
   </component>
@@ -697,7 +632,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223668000" />
+    <option name="totallyTimeSpent" value="226731000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -817,55 +752,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/dao/interfaces/TopicDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/dao/interfaces/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/filter/EncodingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/filter/LoggingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/filter/ImageProtectorFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mmjs_util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/util/commons/MmStringUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
@@ -1206,8 +1092,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/servlet/UserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
+        <state relative-caret-position="321">
           <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/mumu.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/myblog.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/mumu1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/blog.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/blogease.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/me.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="das://table:/4ad75d7d/c397ef44-7cf3-4d81-a949-549e5c893e82/lmbbs.lm_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1220,25 +1159,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/4ad75d7d/c397ef44-7cf3-4d81-a949-549e5c893e82/lmbbs.lm_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+        <state relative-caret-position="-827">
+          <caret line="37" column="77" lean-forward="false" selection-start-line="37" selection-start-column="77" selection-end-line="37" selection-end-column="77" />
           <folding />
         </state>
       </provider>

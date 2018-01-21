@@ -32,7 +32,11 @@ var mmlogin={
                 if(data!="null"){
                 var userInfo = JSON.parse(data);
                 $("#login_view_container").html(mmlogin.loggedView);
-                $(".login_txtinfo_username").html(userInfo.loginName);
+
+
+                $(".login_txtinfo_username").append("<img src='"+userInfo.avatar+"' width='36' height='36' id='user-avatar'>");
+                $("#user-avatar").css({"border-radius":"50%","margin-top":"12px"})
+
                 }
                 else{
                     $("#login_view_container").html(mmlogin.unloggedView);
