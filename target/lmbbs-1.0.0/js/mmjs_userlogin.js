@@ -9,10 +9,11 @@ var mmMessage={
     tip:function (msg) {
         $("#msg_tip").remove();
         $("body").append("<div id='msg_tip'>" +
-            "        <span>  <i class='iconfont icon-wodefankui' style='font-size: 28px;margin-right: 28px'></i> "+msg+" </span>" +
+            "        <span>  <i class='iconfont icon-wodefankui' style='margin-right:28px;font-size: 28px;'></i> "+msg+" </span>" +
             "    </div>");
+        $("#msg_tip").css({"font-family":"mumu","font-size": 22});
 
-        $("#msg_tip").animate({top:0},800).delay(1000).animate({top:-64},600);
+        $("#msg_tip").animate({top:0},800).delay(1600).animate({top:-64},600);
     }
 };
 
@@ -114,7 +115,7 @@ var mmlogin={
                     //服务器出错和这里[Ajax发回来的时候，再改回来。]
                     $(".submit_btn").on("click",loginMain).text("登录").css("background","darkcyan");
                     if(data=="success"){
-                        mmMessage.tip("登录成功！欢迎你，木木！");
+                        mmMessage.tip("非常顺利，成功登录 ! 挥洒书写你的新感受吧!");
                         $("#login_dialog").next().trigger('click');//点击它的旁边区域，让登录框消失。
 
                             mmlogin.query_login_status_to_server();//需要查询，因为要把服务器数据下载下来，而不是简单的更换视图。

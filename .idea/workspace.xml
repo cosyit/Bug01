@@ -18,10 +18,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/header.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/header.css" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0.war" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0.war" />
       <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/portal/index.jsp" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/portal/index.jsp" />
       <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/css/header.css" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/css/header.css" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/mmjs_userlogin.js" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/mmjs_userlogin.js" />
       <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/log.txt" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/log.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -71,15 +69,16 @@
       <file leaf-file-name="mmjs_userlogin.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+            <state relative-caret-position="315">
+              <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
               <folding>
-                <marker date="1516550894530" expanded="true" signature="387:421" ph="..." />
-                <marker date="1516550894530" expanded="true" signature="7301:7316" ph="..." />
-                <marker date="1516550894530" expanded="true" signature="7421:7436" ph="..." />
-                <marker date="1516550894530" expanded="true" signature="7553:7568" ph="..." />
-                <marker date="1516550894530" expanded="true" signature="7716:7731" ph="..." />
-                <marker date="1516550894530" expanded="true" signature="7851:7866" ph="..." />
+                <marker date="1516553571995" expanded="true" signature="387:397" ph="..." />
+                <marker date="1516553571995" expanded="true" signature="387:421" ph="..." />
+                <marker date="1516553571995" expanded="true" signature="7379:7394" ph="..." />
+                <marker date="1516553571995" expanded="true" signature="7499:7514" ph="..." />
+                <marker date="1516553571995" expanded="true" signature="7631:7646" ph="..." />
+                <marker date="1516553571995" expanded="true" signature="7794:7809" ph="..." />
+                <marker date="1516553571995" expanded="true" signature="7929:7944" ph="..." />
               </folding>
             </state>
           </provider>
@@ -88,7 +87,7 @@
       <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
+            <state relative-caret-position="588">
               <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
@@ -98,8 +97,8 @@
       <file leaf-file-name="header.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/header.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="109" column="1" lean-forward="false" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
+            <state relative-caret-position="2100">
+              <caret line="100" column="22" lean-forward="false" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -108,8 +107,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="47" column="42" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="42" />
+            <state relative-caret-position="-546">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -200,8 +199,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/servlet/UserServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/common.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/header.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js" />
       </list>
@@ -236,11 +235,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="380" />
-    <option name="y" value="152" />
-    <option name="width" value="1305" />
-    <option name="height" value="850" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="703" />
+    <option name="y" value="24" />
+    <option name="width" value="1198" />
+    <option name="height" value="946" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -296,21 +295,6 @@
               <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
@@ -659,7 +643,7 @@
       <workItem from="1516469822761" duration="4619000" />
       <workItem from="1516511050806" duration="6033000" />
       <workItem from="1516520027095" duration="15814000" />
-      <workItem from="1516539671589" duration="11160000" />
+      <workItem from="1516539671589" duration="13171000" />
     </task>
     <servers />
   </component>
@@ -696,7 +680,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238252000" />
+    <option name="totallyTimeSpent" value="240263000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -708,7 +692,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -727,7 +711,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20713525" sideWeight="0.6753689" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22060016" sideWeight="0.3246311" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26291695" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2625133" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18961039" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.4941349" order="2" side_tool="false" content_ui="tabs" />
@@ -1137,13 +1121,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="das://table:/4ad75d7d/c397ef44-7cf3-4d81-a949-549e5c893e82/lmbbs.lm_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3024">
@@ -1192,41 +1169,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://table:/4ad75d7d/c397ef44-7cf3-4d81-a949-549e5c893e82/lmbbs.lm_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="100" column="22" lean-forward="false" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="47" column="42" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="42" />
+        <state relative-caret-position="-546">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
+        <state relative-caret-position="588">
           <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="109" column="1" lean-forward="false" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+        <state relative-caret-position="315">
+          <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
           <folding>
-            <marker date="1516550894530" expanded="true" signature="387:421" ph="..." />
-            <marker date="1516550894530" expanded="true" signature="7301:7316" ph="..." />
-            <marker date="1516550894530" expanded="true" signature="7421:7436" ph="..." />
-            <marker date="1516550894530" expanded="true" signature="7553:7568" ph="..." />
-            <marker date="1516550894530" expanded="true" signature="7716:7731" ph="..." />
-            <marker date="1516550894530" expanded="true" signature="7851:7866" ph="..." />
+            <marker date="1516553571995" expanded="true" signature="387:397" ph="..." />
+            <marker date="1516553571995" expanded="true" signature="387:421" ph="..." />
+            <marker date="1516553571995" expanded="true" signature="7379:7394" ph="..." />
+            <marker date="1516553571995" expanded="true" signature="7499:7514" ph="..." />
+            <marker date="1516553571995" expanded="true" signature="7631:7646" ph="..." />
+            <marker date="1516553571995" expanded="true" signature="7794:7809" ph="..." />
+            <marker date="1516553571995" expanded="true" signature="7929:7944" ph="..." />
           </folding>
         </state>
       </provider>

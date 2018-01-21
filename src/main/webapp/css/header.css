@@ -62,7 +62,6 @@ header .header-panel .hp-search .icon-sousuo{
 header .header-panel .hp-navi{
 	width: 520px;
 	height: inherit;
-	background: rebeccapurple;
 }
 
 header .header-panel .hp-navi ul{
@@ -73,7 +72,6 @@ header .header-panel .hp-navi ul{
 header .header-panel .hp-navi ul li{
 	width: 52px;/*52px宽度一个导航，520px可以放10个，空一个作为和用户模块的分隔。*/
 	height: inherit;
-	background: brown;
 	float:left;
 	text-align: center;
 	line-height: 60px;
@@ -82,7 +80,6 @@ header .header-panel .hp-navi ul li{
 header .header-panel .hp-user{
 	width: 200px;
 	height: inherit;
-	background: #adf;
 }
 
 header .header-panel .hp-user ul {
@@ -93,7 +90,7 @@ header .header-panel .hp-user ul {
 header .header-panel .hp-user ul li {
 	width: 50px;
 	height: inherit;
-	background: bisque;
+/*	background: bisque;*/
 	text-align: center;
 	line-height: 60px;
 	float: left;
@@ -101,7 +98,7 @@ header .header-panel .hp-user ul li {
 
 /*消息提示*/
 #msg_tip{
-	background: #7ce660;line-height: 60px;text-align: center;
+	background: bisque;line-height: 60px;text-align: center;
 	position: fixed;
 	top:-60px;
 	left: 0;
