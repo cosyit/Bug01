@@ -98,3 +98,13 @@ header .header-panel .hp-user ul li {
 	line-height: 60px;
 	float: left;
 }
+
+/*消息提示*/
+#msg_tip{
+	background: lightblue;line-height: 60px;text-align: center;
+	position: fixed;
+	top:-60px;
+	left: 0;
+	width: 100%;
+	z-index: 66;
+}

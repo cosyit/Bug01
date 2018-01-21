@@ -44,7 +44,7 @@ public class UserServlet extends HttpServlet {
          *
          */
 
-        if ("login".equals(action)) {
+        if ("iwantlogin".equals(action)) {
             //response.getWriter().print("登录的操作");
             login(request, response);
         }

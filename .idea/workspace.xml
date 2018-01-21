@@ -8,18 +8,28 @@
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/pom.xml" line="148" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/dao/base/DaoSupport.java" line="45" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/css/common.css" line="22" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/css/common.css" line="31" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/tag/MyFirstTag.java" line="14" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/servlet/UserServlet.java" line="71" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff5a538f-bbcb-4c1d-bcbb-bf1cf8b46a19" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/images/avatar/mmheader.jpg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/servlet/UserServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/servlet/UserServlet.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/common.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/common.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/header.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/header.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/登录框标签快速生成方式" afterPath="$PROJECT_DIR$/src/main/webapp/js/登录框标签快速生成方式" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cosyit/lmbbs/web/servlet/UserServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/cosyit/lmbbs/web/servlet/UserServlet.class" />
+      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/classes/com/cosyit/lmbbs/web/servlet/UserServlet.class" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/classes/com/cosyit/lmbbs/web/servlet/UserServlet.class" />
+      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/portal/index.jsp" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/portal/index.jsp" />
       <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/css/common.css" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/css/common.css" />
+      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/index.jsp" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/index.jsp" />
       <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/mmjs_userlogin.js" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/mmjs_userlogin.js" />
+      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/登录框标签快速生成方式" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/登录框标签快速生成方式" />
+      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/log.txt" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/log.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,6 +41,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/lmbbs$lmbbs_tomcat.coverage" NAME="lmbbs_tomcat Coverage Results" MODIFIED="1516546128632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -62,38 +75,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="49" lean-forward="true" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="mmjs_userlogin.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-827">
-              <caret line="37" column="77" lean-forward="false" selection-start-line="37" selection-start-column="77" selection-end-line="37" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myblog.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/images/myblog.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+            <state relative-caret-position="273">
+              <caret line="148" column="35" lean-forward="false" selection-start-line="148" selection-start-column="35" selection-end-line="148" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -120,6 +106,7 @@
       <find>append</find>
       <find>alert</find>
       <find>String</find>
+      <find>javasc</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -136,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/js/mm_util.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/fundamentals/aop/Hello.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fundamentals/aop/HelloProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fundamentals/aop/HelloImpl.java" />
@@ -170,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/filter/DownLoadFilter.java" />
         <option value="$PROJECT_DIR$/src/test/java/aop/v7/LogAspect.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/loginbox.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/filter/ImageProtectorFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/util/commons/TmStringUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/util/web/CookieUitl.java" />
@@ -182,10 +167,12 @@
         <option value="$PROJECT_DIR$/src/test/java/dao/UserServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/util/des/EncryptPropertyPlaceholderConfigurer.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/登录框标签快速生成方式" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/servlet/UserServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/common.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/header.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js" />
       </list>
     </option>
@@ -220,10 +207,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="131" />
-    <option name="y" value="10" />
-    <option name="width" value="1587" />
-    <option name="height" value="1082" />
+    <option name="x" value="380" />
+    <option name="y" value="152" />
+    <option name="width" value="1305" />
+    <option name="height" value="850" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -262,9 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,15 +282,68 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15169194" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -321,15 +358,15 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\lovecode\lmbbs\src\main\webapp\images\avatar" />
+      <recent name="F:\Resource\Desktop\lmbbs\src\main\webapp\WEB-INF" />
+      <recent name="F:\Resource\Desktop\lmbbs\src\main\resources" />
+      <recent name="F:\Resource\Desktop\lmbbs\src\main\webapp\WEB-INF\classes" />
+      <recent name="F:\Resource\Desktop\lmbbs\src\main\webapp\js" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\lovecode\lmbbs\src\main\java\com\cosyit\lmbbs\util" />
-      <recent name="F:\lovecode\lmbbs\src\main\resources" />
-      <recent name="F:\Resource\Desktop\lmbbs\src\main\java\com\fundamentals\aop\v7" />
-      <recent name="F:\Resource\Desktop\lmbbs\src\main\java\com\fundamentals\aop" />
-      <recent name="F:\Resource\Desktop\lmbbs\src\main\webapp\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.cosyit.lmbbs.util.des" />
@@ -338,12 +375,12 @@
       <recent name="com.fundamentals.aop.v4" />
       <recent name="com.fundamentals.aop.v2" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\lovecode\lmbbs\src\main\webapp\images\avatar" />
-      <recent name="F:\Resource\Desktop\lmbbs\src\main\webapp\WEB-INF" />
-      <recent name="F:\Resource\Desktop\lmbbs\src\main\resources" />
-      <recent name="F:\Resource\Desktop\lmbbs\src\main\webapp\WEB-INF\classes" />
-      <recent name="F:\Resource\Desktop\lmbbs\src\main\webapp\js" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\lovecode\lmbbs\src\main\webapp\js" />
+      <recent name="F:\lovecode\lmbbs\src\main\java\com\cosyit\lmbbs\util" />
+      <recent name="F:\lovecode\lmbbs\src\main\resources" />
+      <recent name="F:\Resource\Desktop\lmbbs\src\main\java\com\fundamentals\aop\v7" />
+      <recent name="F:\Resource\Desktop\lmbbs\src\main\java\com\fundamentals\aop" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -419,6 +456,7 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="index.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/lmbbs/PortalServlet/WEB-INF/pages/portal/index.jsp" />
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -545,13 +583,15 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.lmbbs_tomcat" />
       <item index="1" class="java.lang.String" itemvalue="Application.DESUtils" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.jsp" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.DESUtils" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.jsp" />
+        <item index="1" class="java.lang.String" itemvalue="Application.DESUtils" />
       </list>
     </recent_temporary>
   </component>
@@ -595,7 +635,8 @@
       <workItem from="1516462308628" duration="6748000" />
       <workItem from="1516469822761" duration="4619000" />
       <workItem from="1516511050806" duration="6033000" />
-      <workItem from="1516520027095" duration="15453000" />
+      <workItem from="1516520027095" duration="15814000" />
+      <workItem from="1516539671589" duration="7549000" />
     </task>
     <servers />
   </component>
@@ -632,7 +673,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226731000" />
+    <option name="totallyTimeSpent" value="234641000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -655,18 +696,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32671082" sideWeight="0.50292397" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32808718" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12726304" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34888887" sideWeight="0.6795407" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34888887" sideWeight="0.6795407" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291714" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20500532" sideWeight="0.6753689" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20713525" sideWeight="0.6753689" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22060016" sideWeight="0.3246311" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26291695" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18961039" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24222222" sideWeight="0.4926931" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24222222" sideWeight="0.4926931" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24941543" sideWeight="0.50869566" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -678,7 +720,6 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
@@ -752,37 +793,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/util/commons/MmStringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="1831" column="17" lean-forward="true" selection-start-line="1831" selection-start-column="17" selection-end-line="1831" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/lm_bbs.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="149" column="54" lean-forward="true" selection-start-line="149" selection-start-column="54" selection-end-line="149" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/Program Files (x86)/java/java9.0.4/jdkhome/lib/src.zip!/java.base/java/util/Base64.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="76" column="13" lean-forward="false" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c397ef44-7cf3-4d81-a949-549e5c893e82/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -901,7 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
           <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -990,7 +999,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1043,10 +1051,6 @@
           <caret line="620" column="26" lean-forward="false" selection-start-line="620" selection-start-column="24" selection-end-line="620" selection-end-column="27" />
           <caret line="645" column="26" lean-forward="false" selection-start-line="645" selection-start-column="24" selection-end-line="645" selection-end-column="27" />
           <caret line="695" column="48" lean-forward="false" selection-start-line="695" selection-start-column="46" selection-end-line="695" selection-end-column="49" />
-          <folding>
-            <element signature="e#2531#2532#0" expanded="false" />
-            <element signature="e#2602#2603#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1054,7 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="42" column="38" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,23 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
           <caret line="62" column="18" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-525">
-          <caret line="29" column="79" lean-forward="false" selection-start-line="29" selection-start-column="79" selection-end-line="29" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1086,7 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,34 +1120,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/common.css">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state relative-caret-position="3024">
+          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index2.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mmjs_util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-3.2.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="49" lean-forward="true" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        <state relative-caret-position="0">
+          <caret line="0" column="56" lean-forward="false" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="59" column="14" lean-forward="false" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-309">
+          <caret line="17" column="65" lean-forward="true" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="109" column="1" lean-forward="true" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-827">
-          <caret line="37" column="77" lean-forward="false" selection-start-line="37" selection-start-column="77" selection-end-line="37" selection-end-column="77" />
+        <state relative-caret-position="273">
+          <caret line="148" column="35" lean-forward="false" selection-start-line="148" selection-start-column="35" selection-end-line="148" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1222,7 +1255,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>web01</last-edited>
+          <last-edited>lmbbs</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1247,7 +1280,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: commons-codec:commons-codec:1.3</last-edited>
+          <last-edited>Maven: asm:asm-commons:3.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

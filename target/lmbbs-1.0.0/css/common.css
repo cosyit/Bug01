@@ -16,6 +16,15 @@ a {
     color: #2f2f2f;
 }
 
+/*body 似乎更有效。加上之后，文字不可选了。*/
+body,input,textarea {
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+
 .fl{float: left;}
 .fr{float: right;}
 /*自定义字体*/

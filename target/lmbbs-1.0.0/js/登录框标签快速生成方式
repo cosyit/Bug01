@@ -15,7 +15,7 @@
  div.submit_btn
  -->
 
- * @type {{login: mmlogin.login}}
+ * @type {{iwantlogin: mmlogin.iwantlogin}}
  */
 
 

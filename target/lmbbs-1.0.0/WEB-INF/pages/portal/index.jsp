@@ -10,16 +10,27 @@
 <head>
     <base href="<%=basePath%>">
     <title> [ Mu Mu 博 客 ]</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/mmjs_userlogin.js" charset="utf-8" async defer></script>
+    <script type="text/javascript" src="js/mmjs_util.js" charset="utf-8" async defer></script>
     <link rel="shortcut icon" href="images/me.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/loginbox.css">
     <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_516817_yciqkobhzqqto6r.css">
-    <script type="text/javascript" src="js/jquery-3.2.1.js" charset="utf-8" async defer></script>
-    <script type="text/javascript" src="js/mmjs_userlogin.js" charset="utf-8" async defer></script>
-    <script type="text/javascript" src="js/mmjs_util.js" charset="utf-8" async defer></script>
 </head>
 <body>
+
+<%--
+        先写 HTML在body中看效果，然后，用转字符串工具，放入JS。
+    <div id="massage_tip">
+        <span>  <i class="iconfont icon-sousuo"></i> 请输入用户名 </span>
+    </div>
+
+--%>
+
+
+
 <!-- 一.头部 -->
 <header>
     <div class="header-panel">
@@ -59,7 +70,7 @@
                 <%-- 为了静态化。这种动态内容舍弃
  <c:if test="${ SESSION_LOGGED_ON_USER eq null}" var="ISHASSESSION">
       <li></li>
-      <li><a href="javascript:void(0)" onclick="mmlogin.login()">登录</a></li>
+      <li><a href="javascript:void(0)" onclick="mmlogin.iwantlogin()">登录</a></li>
       <li><a href="javascript:void(0)" onclick="mmlogin.logout()">注册</a></li>
       <li></li>
   </c:if>
@@ -74,6 +85,6 @@
         </div>
     </div>
 </header>
-        ${user.avatar}
+
 </body>
 </html>
