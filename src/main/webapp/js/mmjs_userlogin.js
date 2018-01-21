@@ -3,6 +3,8 @@
     mmlogin.logout();
 });
 
+
+//JS语言中，一个类的对象和属性是不分上下顺序的。
 var mmlogin={
     //因为要做静态化，首页是不能写<c:if >这样的动态判断，所以要做静态化的问题。
     logout:function(){
@@ -19,7 +21,7 @@ var mmlogin={
                         "<li><a href='javascript:void(0)' onclick='mmlogin.logout()'>注册</a></li>\n" +
                         "<li></li>";
 
-                    $("#mmloginBox").html(html);
+                    $("#login_view_container").html(html);
                 }
             }
 
@@ -39,11 +41,7 @@ var mmlogin={
 
 
 
-        var html="<li>消息 </li>\n" +
-            "                    <li><a href='可去个人中心'>木木</a></li>\n" +
-            "                    <li>写</li>\n" +
-            "                    <li><a href='javascript:void(0)' onclick='mmlogin.logout()'>退出</a></li>";
-        $("#mmloginBox").html(html);
+        $("#login_view_container").html(mmlogin.loggedView);
     },
     login:function(){
         $("login_dialog").remove();
@@ -74,8 +72,6 @@ var mmlogin={
                 var password=$(".password").val();
                 /*      var verfi_typing=$(".verfi_typing").val();*/
 
-                // alert(username+","+password);
-
                 if(isEmpty($(".username").val())){
                     alert("请输入账号")
                     $(".username").focus();
@@ -102,7 +98,7 @@ var mmlogin={
            // $(this).off("click");
             /*return; *///TODO delete
 
-                alert(JSON.stringify(params)); //parse用于从一个字符串中解析出json对象。
+              //  alert(JSON.stringify(params)); //JSON.parse(str)则可用于从字符串-->解析为 jsonObj格式。
 
                 $.ajax({
                     type:"POST",
@@ -139,9 +135,6 @@ var mmlogin={
 
                 });
             };
-
-
-
     },
 
     wangToLoginView:"<div id='login_dialog'>"+
@@ -178,43 +171,16 @@ var mmlogin={
     "</div>"+
     "<!--弹窗遮罩层-->"+
     "<div class='dialog_over'></div>"
+    ,
+    //未登录视图
+    unloggedView:"<li></li>" +
+    "<li><a href='javascript:void(0)' onclick='mmlogin.login()'>登录</a></li>\n" +
+    "<li><a href='javascript:void(0)' onclick='mmlogin.logout()'>注册</a></li>\n" +
+    "<li></li>"
+    ,
+    //登录视图
+    loggedView:"<li>消息 </li>\n" +
+        "                    <li><a href='可去个人中心'>木木</a></li>\n" +
+        "                    <li>写</li>\n" +
+        "                    <li><a href='javascript:void(0)' onclick='mmlogin.logout()'>退出</a></li>"
 }
-
-/*
-<div id="login_dialog">
-    <div class="mid_position">
-        <div class="logo m8-w240-h40"></div>
-        <div class="content_typing_u m8-w240-h40">
-            <span class="login_txtinfo">用户</span><input type="text" class="username login_input_style">
-        </div>
-        <div class="content_typing_pw m8-w240-h40">
-            <span class="login_txtinfo">密码</span><input type="text" class="password login_input_style">
-        </div>
-        <div class="verification m8-w240-h40">
-            <span class="login_txtinfo">验证</span><input type="text" class="verfi_typing login_input_style">
-        </div>
-        <div class="verification m8-w240-h40">
-            <div class="verify_img fl">
-                <img src="images/myblog.png" alt="验证码" width="120" height="32"/>
-            </div>
-            <div class="change_btn fl">
-                <a href="#">换图</a>
-            </div>
-
-        </div>
-        <div class="m8-w240-h40" >
-            <div class="submit_btn">登录</div>
-            <div class="autologins_7days">
-                <input type="checkbox">
-                <span>自动登录</span>
-            </div>
-        </div>
-        <div class="m8-w240-h40">
-            没有账号？<a href="">注册</a>
-        </div>
-    </div>
-</div>
-<!--弹窗遮罩层-->
-<div class="dialog_over"></div>
-* */
-

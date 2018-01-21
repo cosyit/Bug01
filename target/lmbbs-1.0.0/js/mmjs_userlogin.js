@@ -19,7 +19,7 @@ var mmlogin={
                         "<li><a href='javascript:void(0)' onclick='mmlogin.logout()'>注册</a></li>\n" +
                         "<li></li>";
 
-                    $("#mmloginBox").html(html);
+                    $("#login_view_container").html(html);
                 }
             }
 
@@ -39,11 +39,7 @@ var mmlogin={
 
 
 
-        var html="<li>消息 </li>\n" +
-            "                    <li><a href='可去个人中心'>木木</a></li>\n" +
-            "                    <li>写</li>\n" +
-            "                    <li><a href='javascript:void(0)' onclick='mmlogin.logout()'>退出</a></li>";
-        $("#mmloginBox").html(html);
+        $("#login_view_container").html(mmlogin.loggedView);
     },
     login:function(){
         $("login_dialog").remove();
@@ -74,8 +70,6 @@ var mmlogin={
                 var password=$(".password").val();
                 /*      var verfi_typing=$(".verfi_typing").val();*/
 
-                // alert(username+","+password);
-
                 if(isEmpty($(".username").val())){
                     alert("请输入账号")
                     $(".username").focus();
@@ -102,7 +96,7 @@ var mmlogin={
            // $(this).off("click");
             /*return; *///TODO delete
 
-                alert(JSON.stringify(params)); //parse用于从一个字符串中解析出json对象。
+              //  alert(JSON.stringify(params)); //JSON.parse(str)则可用于从字符串-->解析为 jsonObj格式。
 
                 $.ajax({
                     type:"POST",
@@ -178,6 +172,18 @@ var mmlogin={
     "</div>"+
     "<!--弹窗遮罩层-->"+
     "<div class='dialog_over'></div>"
+    ,
+    //未登录视图
+    unloggedView:"<li></li>" +
+    "<li><a href='javascript:void(0)' onclick='mmlogin.login()'>登录</a></li>\n" +
+    "<li><a href='javascript:void(0)' onclick='mmlogin.logout()'>注册</a></li>\n" +
+    "<li></li>"
+    ,
+    //登录视图
+    loggedView:"<li>消息 </li>\n" +
+        "                    <li><a href='可去个人中心'>木木</a></li>\n" +
+        "                    <li>写</li>\n" +
+        "                    <li><a href='javascript:void(0)' onclick='mmlogin.logout()'>退出</a></li>"
 }
 
 /*

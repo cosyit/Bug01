@@ -55,7 +55,7 @@
 
         <!--4. 用户登录注册 -->
         <div class="hp-user fl">
-            <ul id="mmloginBox">
+            <ul id="login_view_container">
               <%-- 为了静态化。动态内容舍弃
                <c:if test="${ SESSION_LOGGED_ON_USER eq null}" var="ISHASSESSION">
                     <li></li>
