@@ -1,0 +1,19 @@
+
+﻿/**
+ * <!-- 登录弹窗 : 三次登录错误要出验证码！
+ login_dialog > (
+ div.logo+div.content_typing>
+ (
+ input[type='password'].password
+ +
+ input.username
+ )
+ +
+ div.verfication>
+ input.verfi_typing+img[width height]
+ +
+ div.submit_btn
+ -->
+
+ * @type {{login: mmlogin.login}}
+ */

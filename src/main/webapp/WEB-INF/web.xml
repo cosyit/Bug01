@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         id="WebApp_ID" version="3.1"
+         metadata-complete="false">
+
+	<display-name>我的博客项目</display-name>
+
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>com.cosyit.lmbbs.web.filter.EncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+    </filter>
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+	<!--	<filter>
+            <filter-name>ImageProtectorFilter</filter-name>
+            <filter-class>com.cosyit.lmbbs.web.filter.ImageProtectorFilter</filter-class>
+        </filter>
+        <filter-mapping>
+            <filter-name>ImageProtectorFilter</filter-name>
+            <url-pattern>*.png</url-pattern>
+        </filter-mapping>
+        <filter-mapping>
+            <filter-name>ImageProtectorFilter</filter-name>
+            <url-pattern>*.jpg</url-pattern>
+        </filter-mapping>
+        <filter-mapping>
+            <filter-name>ImageProtectorFilter</filter-name>
+            <url-pattern>*.gif</url-pattern>
+        </filter-mapping>-->
+
+
+    <servlet>
+        <servlet-name>PortalServlet</servlet-name>
+        <servlet-class>com.cosyit.lmbbs.web.servlet.PortalServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PortalServlet</servlet-name>
+        <url-pattern>/PortalServlet/*</url-pattern>
+    </servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<description>
+		------------------------待加入的一些功能：---------------------------
+		1.表单验证的操作。
+		2.密码可以为空，而且密码，还可以任意长短。
+		3.添加手机号码。                  ...QQ号，微信，支付宝？
+
+		修改JDBCUtils中 getConnection和close方法的事务的支持，
+		通过ThreadLocal 来保证，同一个线程中保证操作的一定是同一个Connection对象。
+		Connection的关闭，必须在业务完成之后关闭。 关闭单独抽取，在业务类关闭。
+		更多参考论坛表设计相关文章。
+
+		1.会员管理模块（用户，权限，角色）
+		用户表，权限表，角色表（角色绑定某种权限）
+		2.版面管理模块（主板块，子版块，板块可以上移下移）
+		3.帖子回复
+		4.站内搜索
+		5.博客链接
+		6.等等。。。待定
+
+		具体操作步骤：
+		一：第一大块
+		1.创建数据库UTF8:
+		CREATE DATABASE `lm_bbs` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+
+		2.创建联盟用户数据库表
+		注释：①avater头像-mediumblob类型用来储存二进制图片  ②signature署名签名
+		③registrationTime 注册时间（未来将添加注册地点？）④lastVisitTime最后一次访问时间
+		⑤lastVisitIpAddr 最后一次的登录地址                             ⑥topicCount帖子数
+		⑦articleCount   文章数					   ⑧locked  封号状态
+		⑨autoLoginAuthKey 自动登录验证			   ⑩主键是id
+		CREATE TABLE `lm_user` (
+		`id` varchar(45) NOT NULL,
+		`loginName` varchar(128) DEFAULT NULL,
+		`password` varchar(128) DEFAULT NULL,
+		`email` varchar(128) DEFAULT NULL,
+		`nickName` varchar(128) DEFAULT NULL,
+		`gender` varchar(16) DEFAULT NULL,
+		`avatar` mediumblob,
+		`signature` varchar(255) DEFAULT NULL,
+		`registrationTime` datetime DEFAULT NULL,
+		`lastVisitTime` datetime DEFAULT NULL,
+		`lastVisitIpAddr` varchar(50) DEFAULT NULL,
+		`topicCount` int(11) DEFAULT NULL,
+		`articleCount` int(11) DEFAULT NULL,
+		`locked` bit(1) DEFAULT NULL,
+		`autoLoginCookieString` varchar(128) DEFAULT NULL,
+		PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+		3.角色表
+		注释： defaultForNewUser-->新用户是否给默认的角色
+		CREATE TABLE `lm_role` (
+		`id` varchar(255) NOT NULL,
+		`name` varchar(64) DEFAULT NULL,
+		`description` varchar(255) DEFAULT NULL,
+		`defaultForNewUser` bit(1) DEFAULT NULL,
+		PRIMARY KEY (`id`)
+		)   ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+		4.用户角色关联临时表（这种临时表不需要单独来建所对应的类）
+		一个用户拥有多个角色，一个角色也可以被多个用户所拥有，多对多关系。
+		角色表和用户表之间是多对多关系，通过第三张表来关联。
+		PRIMARY KEY (`userId`,`roleId`)复合组件，2个属性来共同标识此物
+
+		CREATE TABLE `lm_user_role` (
+		`userId` varchar(45) NOT NULL,
+		`roleId` varchar(255) NOT NULL,
+		PRIMARY KEY (`userId`,`roleId`),
+		KEY `FK9C95CD553B7C6692` (`roleId`),
+		KEY `FK9C95CD55E0A72A72` (`userId`),
+		CONSTRAINT `FK9C95CD55E0A72A72` FOREIGN KEY (`userId`) REFERENCES `lm_user` (`id`),
+		CONSTRAINT `FK9C95CD553B7C6692` FOREIGN KEY (`roleId`) REFERENCES `lm_role` (`id`)
+		)ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+		将来业务操作时就会用如下操作：
+		①根据用户查询角色；②根据角色查询哪些用户拥有。
+		怎么做呢？
+		答：在lm_user表中添加集合存放的角色，可以在角色表中添加集合存放用户。
+
+
+		5.权限表（权限号，权限名，具体作用，作用对象）
+		CREATE TABLE `lm_systemprivilege` (
+		`id` varchar(255) NOT NULL,
+		`name` varchar(255) DEFAULT NULL,
+		`action` varchar(64) DEFAULT NULL,
+		`resource` varchar(64) DEFAULT NULL,
+		PRIMARY KEY (`id`)
+		)ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+
+		一个角色可以拥有多个权限
+		一个权限可以被多个角色所拥有
+		所以角色表和权限表之间是多对多关系n:n
+		通过第三张表建立该关系
+
+		CREATE TABLE `lm_role_systemprivileges` (
+		`roleId` varchar(255) NOT NULL,
+		`systemPrivilegeId` varchar(255) NOT NULL,
+		PRIMARY KEY (`roleId`,`systemPrivilegeId`),
+		KEY `FK70476C853B7C6692` (`roleId`),
+		KEY `FK70476C8558D7FED6` (`systemPrivilegeId`),
+		CONSTRAINT `FK70476C8558D7FED6` FOREIGN KEY (`systemPrivilegeId`) REFERENCES
+		`lm_systemprivilege` (`id`),
+		CONSTRAINT `FK70476C853B7C6692` FOREIGN KEY (`roleId`) REFERENCES `lm_role` (`id`)
+		) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+		查询角色的权限（根据角色查询权限）
+
+
+
+
+		拥有哪些权限都定义好，向表中插入我们定义好的权限：
+		INSERT INTO `lm_systemprivilege` VALUES
+		('297e0592448b4e7201448b4ee117001e','发表主题','Create','Topic'),
+		('297e0592448b4e7201448b4ee117001f','查看主题','Retrieval','Topic'),
+		('297e0592448b4e7201448b4ee1170020','修改主题','Update','Topic'),
+		('297e0592448b4e7201448b4ee1170021','删除主题','Delete','Topic'),
+		('297e0592448b4e7201448b4ee1170022','移动主题','Move','Topic'),
+		('297e0592448b4e7201448b4ee1170023','发表回复','Create','Reply'),
+		('297e0592448b4e7201448b4ee1170024','查看回复','Retrieval','Reply'),
+		('297e0592448b4e7201448b4ee1170025','修改回复','Update','Reply'),
+		('297e0592448b4e7201448b4ee1170026','删除回复','Delete','Reply'),
+		('297e0592448b4e7201448b4ee1170027','发表附件','Create','Attachment'),
+		('297e0592448b4e7201448b4ee1170028','查看附件','Retrieval','Attachment'),
+		('297e0592448b4e7201448b4ee1170029','更新附件','Update','Attachment'),
+		('297e0592448b4e7201448b4ee117002a','删除附件','Delete','Attachment'),
+		('297e0592448b4e7201448b4ee117002b','下载附件','Download','Attachment'),
+		('297e0592448b4e7201448b4ee117002c','发表投票','Create','Poll'),
+		('297e0592448b4e7201448b4ee117002d','查看投票','Retrieval','Poll'),
+		('297e0592448b4e7201448b4ee117002e','修改投票','Update','Poll'),
+		('297e0592448b4e7201448b4ee117002f','删除投票','Delete','Poll'),
+		('297e0592448b4e7201448b4ee1170030','参与投票','Vote','Poll'),
+		('297e0592448b4e7201448b4ee1170031','管理系统','Manage','System');
+
+		===================================第二大块内容=====================================
+		1.主版块、分类表   将来需要上移、下移
+		注解：主板块
+		CREATE TABLE `lm_category` (
+		`id` varchar(255) NOT NULL,
+		`name` varchar(255) DEFAULT NULL,
+		`order` int(11) DEFAULT NULL,
+		PRIMARY KEY (`id`)
+		) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+		2.子版块（二级版块）  属于某个父版块 主外键关系
+		父板块category：子版块关系是forum === 1:n
+		子版块就应有帖子数、最新的帖子等等  就需要跟帖子表有关联1:1引用主键
+		当然帖子表属于某个二级版块，一个版块有多个帖子           帖子：版块是n:1
+
+		创建子版块  -->先不建立和帖子表之间的关系，因为目前帖子没创建。
+		注解：子版块forum
+		①description板块的描述                    ②order板块的排序                      ③categoryId所属父板块的id
+		④topicCount帖子数                              ⑤articlecount回复数            ⑥lastTopicId最新帖编号
+		⑦lastArticlePostTime最后一个回复的时间
+		sql语句如下：
+		CREATE TABLE `lm_forum` (
+		`id` varchar(255) NOT NULL,
+		`name` varchar(255) DEFAULT NULL,
+		`description` varchar(255) DEFAULT NULL,
+		`myorder` int(11) DEFAULT NULL,
+		`categoryId` varchar(255) DEFAULT NULL,
+		`topicCount` int(11) DEFAULT NULL,
+		`articleCount` int(11) DEFAULT NULL,
+		`lastTopicId` varchar(255) DEFAULT NULL,
+		`lastArticlePostTime` datetime DEFAULT NULL,
+		PRIMARY KEY (`id`),
+		KEY `FK903A938CCE73292` (`categoryId`),
+		CONSTRAINT `FK903A938CCE73292` FOREIGN KEY (`categoryId`) REFERENCES `lm_category`
+		(`id`)
+		) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+		lastTopicId会引用一个Topic的Id,可是目前Topic暂时没建立。创建Topic再来修改这张表。
+
+		在Forum类中把Category的对象作为成员--->代表该子版块属于哪个父版块
+		在Category中添加集合，存放这个父版块的所有子版块
+
+
+		创建帖子表
+		帖子属于哪个版块、帖子是谁发的、帖子的回复数、帖子的最后一个回复
+		CREATE TABLE `lm_topic` (
+		`id` varchar(255) NOT NULL,
+		`title` varchar(255) DEFAULT NULL,
+		`content` text,
+		`authorId` varchar(45) DEFAULT NULL,
+		`postTime` datetime DEFAULT NULL,
+		`ipAddr` varchar(16) DEFAULT NULL,
+		`deleted` bit(1) DEFAULT NULL,
+		`type` varchar(255) DEFAULT NULL,
+		`forumId` varchar(255) DEFAULT NULL,
+		`summary` text,
+		`viewCount` int(11) DEFAULT NULL,
+		`lastReplyId` varchar(255) DEFAULT NULL,
+		`lastArticlePostTime` datetime DEFAULT NULL,
+		`nextFloor` int(11) DEFAULT NULL,
+		PRIMARY KEY (`id`),
+		KEY `FK90FFD39A5FF9C116` (`forumId`),
+		KEY `FK6899E4A141601CB290ffd39a` (`authorId`),
+		CONSTRAINT `FK6899E4A141601CB290ffd39a` FOREIGN KEY (`authorId`) REFERENCES
+		`lm_user` (`id`),
+		CONSTRAINT `FK90FFD39A5FF9C116` FOREIGN KEY (`forumId`) REFERENCES `lm_forum`
+		(`id`)
+		) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+		好了，现在我们帖子表已经创建了。那么，现在我们可以去修改
+		lm_forum(子版块)表中的lastTopicId的约束
+		alter table lm_forum
+		add foreign key (lastTopicId) REFERENCES lm_topic(id);
+		在Fourm中添加Topic最后一回复的信息
+
+		创建回复表lm_reply：
+		回复的哪个帖子、谁回复的
+		CREATE TABLE `lm_reply` (
+		`id` varchar(255) NOT NULL,
+		`title` varchar(255) DEFAULT NULL,
+		`content` text,
+		`authorId` varchar(45) DEFAULT NULL,
+		`postTime` datetime DEFAULT NULL,
+		`ipAddr` varchar(50) DEFAULT NULL,
+		`deleted` bit(1) DEFAULT NULL,
+		`floor` int(11) DEFAULT NULL,
+		`topicId` varchar(255) DEFAULT NULL,
+		PRIMARY KEY (`id`),
+		KEY `FK90DF1955AF81E56` (`topicId`),
+		KEY `FK6899E4A141601CB290df1955` (`authorId`),
+		CONSTRAINT `FK6899E4A141601CB290df1955` FOREIGN KEY (`authorId`) REFERENCES
+		`lm_user` (`id`),
+		CONSTRAINT `FK90DF1955AF81E56` FOREIGN KEY (`topicId`) REFERENCES `lm_topic` (`id`)
+		) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+		修改lm_topic表中的lastReplyId的约束
+
+		alter table lm_topic
+		add foreign key (lastReplyId) REFERENCES lm_reply(id)
+
+		在Foum中类添加最后一个Replylast回复的信息
+
+		数据层基本完成
+
+		================第三大块：设置所有表的字符集问题=====================
+		数据库操作
+		尽量结合应用提炼数据操作
+		a.JdbcUtil------>数据库连接信息
+		b.提炼通用的操作，避免重复写:做一些设计。
+
+
+		分页：用户很多的时候，需要分页。
+		帖子很多的时候，需要分页。
+		回复很多的时候，需要分页。
+
+		第三大块的内容完全可以用框架来解决。
+
+		业务层写好。
+
+
+		========================web 层 过程记录：==================================
+
+
+		1.完成用户模块的一些操作
+		a.数据层的操作 （若缺 再补)
+		b.业务UserService/UserServiceImpl
+		c.完成登陆操作
+		c.1进入 portal/index.jsp页面
+		c.2过滤器处理中文
+		c.3登陆操作
+		注意1：用户是否登陆
+		注册成功直接让用登录
+		注销等操作
+		都要做:[session中有没有用户]的判断
+
+		注意2：如何自动登陆（完成注册之后来完成）
+		通过cookie操作
+		---->把Cookie的添加和取的操作包装成类
+		---->Cookie登陆无非是在登陆成功的时候  添加cookie
+		以后再登陆的时候，查找cookie的内容
+		把这两个操作都包装到类中
+		MemberAutoLoginCookieUtil
+		----->通过过滤器实现自动登陆功能
+		----->注销就清楚cookie
+		d.完成注册
+		要注意登陆名和email不能重复
+		密码需要加密
+		密码加密了，登陆操作就需要修改
+
+		e.注销修改密码等操作
+
+		2.系统管理模块
+		2.1进入系统界面
+		2.2版面管理
+		a.遍历显示主版块
+		b. 添加父版块、修改、删除、上移、下移
+		c.添加子版块、修改、删除、上移、下移
+
+
+		3.角色管理
+		角色----》角色的所有权限
+		----》给角色分配权限
+		----》添加角色并同时分配权限
+		----》删除角色
+
+		补充完成的部分：
+		a.复选按钮的默认选中问题
+		b.设置为默认和取消默认操作
+
+
+		3.会员管理
+		----》list的页面的显示
+		----》会员的角色的修改     /   锁定状态的修改
+		----》list的页面的不定条件查询
+		----》分页(需要补充的更加完整)
+
+		权限的控制，如果没有该权限，操作的选项就不出现（比如系统管理、比如表帖子选项等...)
+
+		4.帖子、回复
+		----->从首页进入主页面，完成页面上一些操作
+		----->发帖操作
+	</description>
+</web-app>

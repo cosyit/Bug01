@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+header{
+    height:60px;
+    width: 100%;
+   /* background: #333;delete*/
+    position: fixed;
+}
+
+header .header-panel{
+    width:1200px;
+    /*background: aqua;delete*/
+    height: inherit;
+    margin: 0 auto;
+}
+
+header .header-panel .hp-logo{
+	width: 180px;
+	height: inherit;
+	/*background: #dfa;delete*/
+}
+header .header-panel .hp-logo img{
+	float: left;/*图片浮动后挤出文字，文字不能垂直居中的问题解决了。我怀疑是，原来文字和图片同一个层，图片影响了文字的行高？*/
+}
+header .header-panel .hp-logo span{
+	font-size: 30px;
+	line-height: 60px;
+	/*color:#2f2f2f;delete*/
+	font-family: "mumu";
+	color:#111;
+
+	display: inline-block;/*text-indent对块元素有用。纯行内元素无效。*/
+	text-indent: 16px;
+}
+
+header .header-panel .hp-search{
+	width: 300px;
+	height: inherit;
+	/*background: #afd;delete*/
+
+	/*为修饰内部的CSS*/
+	text-align: center;/*input框被置于中间[水平居中]，它和文字一样具有行内特性。*/
+	line-height: 60px;/*input框垂直居中*/
+	/*vertical-align: text-top;因为行高的问题，它没有空间置顶*/
+}
+
+header .header-panel .hp-search .search-box{
+	height: 36px;
+	width: 240px;
+	outline-style: none;/*去除焦点时样式[蓝色线条框]*/
+	/*outline-offset: 16px; 矩形外面加轮廓*/
+	font-size: 18px;
+	border:none;
+	border-bottom: 1px solid black;
+
+}
+header .header-panel .hp-search .icon-sousuo{
+	font-size: 28px;
+}
+
+
+header .header-panel .hp-navi{
+	width: 520px;
+	height: inherit;
+	background: rebeccapurple;
+}
+
+header .header-panel .hp-navi ul{
+	width: inherit;
+	height: inherit;
+}
+
+header .header-panel .hp-navi ul li{
+	width: 52px;/*52px宽度一个导航，520px可以放10个，空一个作为和用户模块的分隔。*/
+	height: inherit;
+	background: brown;
+	float:left;
+	text-align: center;
+	line-height: 60px;
+}
+
+header .header-panel .hp-user{
+	width: 200px;
+	height: inherit;
+	background: #adf;
+}
+
+header .header-panel .hp-user ul {
+	width: inherit;
+	height: inherit;
+}
+
+header .header-panel .hp-user ul li {
+	width: 50px;
+	height: inherit;
+	background: bisque;
+	text-align: center;
+	line-height: 60px;
+	float: left;
+}

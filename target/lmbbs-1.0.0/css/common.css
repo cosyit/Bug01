@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*
+所有页面通用CSS
+ */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fl{float: left;}
+.fr{float: right;}
+/*自定义字体*/
+@font-face {
+    font-family: "mumu";
+    src: url("../fonts/fonts/xingcu.ttf"); /*注意：相对路径以包含此代码的文件路径为基点*/
+}
+
+/*定义关键帧*/
+@-webkit-keyframes moving {
+    0% {transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+/*使用关键帧*/
+.r{-webkit-animation:moving 5s linear infinite;border-radius:215px;transform-origin:23px 25px;} /*linear:线性变化,ease 中间快*/
+
+
+@media screen and (max-width: 1200px){
+    body{
+        background: bisque;
+    }
+}
