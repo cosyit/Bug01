@@ -32,3 +32,11 @@
     text-align: center;
     background: #d28b77;
 }
+
+.system_manage .the_content .play_view #module_big_screen{
+    width:710px;
+    height: 900px;/*todo delete*/
+    background: #d28b77;
+    margin:20px auto;
+    overflow: auto;
+}

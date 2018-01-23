@@ -12,8 +12,10 @@
 
 <!-- 正文开始 -->
 <div class="main_body_container">
-
+        <h2>首页哦！</h2>
 </div>
+
+
 <%@include file="../commons/footer.jsp"%>
 </body>
 </html>

@@ -3,6 +3,7 @@
 <script type="text/javascript" src="resources/js/jquery-3.2.1.js" charset="utf-8"></script>
 <script type="text/javascript" src="resources/js/mmjs_userlogin.js" charset="utf-8" async defer></script>
 <script type="text/javascript" src="resources/js/mmjs_util.js" charset="utf-8" async defer></script>
+<script type="text/javascript" src="resources/js/smanage.js" charset="utf-8" async defer></script>
 <link rel="shortcut icon" href="resources/images/me.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="resources/css/common.css">
 <link rel="stylesheet" type="text/css" href="resources/css/header.css">
