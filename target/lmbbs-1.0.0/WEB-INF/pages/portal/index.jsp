@@ -11,7 +11,9 @@
 <%@include file="../commons/header.jsp"%>
 
 <!-- 正文开始 -->
+<div class="main_body_container">
 
-
+</div>
+<%@include file="../commons/footer.jsp"%>
 </body>
 </html>

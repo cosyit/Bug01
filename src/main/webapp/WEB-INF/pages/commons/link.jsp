@@ -7,4 +7,5 @@
 <link rel="stylesheet" type="text/css" href="resources/css/common.css">
 <link rel="stylesheet" type="text/css" href="resources/css/header.css">
 <link rel="stylesheet" type="text/css" href="resources/css/loginbox.css">
+<link rel="stylesheet" type="text/css" href="resources/css/footer.css">
 <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_516817_yciqkobhzqqto6r.css">

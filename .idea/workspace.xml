@@ -14,54 +14,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff5a538f-bbcb-4c1d-bcbb-bf1cf8b46a19" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/lmbbs_war.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/manage.css" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/footer.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/servlet/PortalServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/servlet/PortalServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tag/MyFirstTag.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/footer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/footer.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/header.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/link.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/link.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage/sm/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage/sm/index.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/common.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/common.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/header.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/header.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/loginbox.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/loginbox.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/fonts/xingcu.ttf" afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fonts/xingcu.ttf" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/avatar/mmheader.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/avatar/mmheader.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/blog.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/blog.png" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/blogease.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/blogease.png" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/me.ico" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/me.ico" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/mumu.ico" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/mumu.ico" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/mumu1.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/mumu1.png" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/myblog.png" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/myblog.png" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-3.2.1.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/jquery-3.2.1.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/mmjs_userlogin.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/mmjs_userlogin.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/mmjs_util.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/mmjs_util.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/登录框标签快速生成方式" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/登录框标签快速生成方式" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tag/MyFirstTag.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/classes/tag/MyFirstTag.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/commons/footer.jsp" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/commons/footer.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/commons/header.jsp" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/commons/header.jsp" />
       <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/commons/link.jsp" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/commons/link.jsp" />
       <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/manage/sm/index.jsp" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/manage/sm/index.jsp" />
       <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/portal/index.jsp" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/WEB-INF/pages/portal/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/css/common.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/css/header.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/css/loginbox.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/fonts/fonts/xingcu.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/images/avatar/mmheader.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/images/blog.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/images/blogease.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/images/me.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/images/mumu.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/images/mumu1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/images/myblog.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/jquery-3.2.1.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/mmjs_userlogin.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/mmjs_util.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/js/登录框标签快速生成方式" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/lmbbs-1.0.0/log.txt" afterPath="$PROJECT_DIR$/target/lmbbs-1.0.0/log.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -115,11 +77,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage/sm/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="421">
+              <caret line="75" column="42" lean-forward="false" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -155,11 +117,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="253">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/footer.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="link.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/link.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/header.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/footer.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -205,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/fundamentals/aop/v5/TestTarget.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fundamentals/aop/v6/Algorithim.java" />
         <option value="F:/apprentice/code/web01/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/filter/EncodingFilter.java" />
@@ -245,17 +246,18 @@
         <option value="$PROJECT_DIR$/src/main/webapp/css/common.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/taglib.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/servlet/UserServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/web/servlet/PortalServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/common.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/link.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/mmjs_userlogin.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage/sm/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/loginbox.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/manage.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/header.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/footer.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/footer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/link.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage/sm/index.jsp" />
       </list>
     </option>
   </component>
@@ -289,9 +291,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="394" />
+    <option name="x" value="517" />
     <option name="y" value="2" />
-    <option name="width" value="1527" />
+    <option name="width" value="1404" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -396,6 +398,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -406,6 +417,16 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lmbbs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="commons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lmbbs" type="b2602c69:ProjectViewProjectNode" />
@@ -743,7 +764,7 @@
       <workItem from="1516520027095" duration="15814000" />
       <workItem from="1516539671589" duration="21368000" />
       <workItem from="1516617099989" duration="12939000" />
-      <workItem from="1516708064996" duration="3215000" />
+      <workItem from="1516708064996" duration="3751000" />
     </task>
     <servers />
   </component>
@@ -780,7 +801,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265738000" />
+    <option name="totallyTimeSpent" value="266274000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -792,7 +813,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="394" y="2" width="1527" height="1040" extended-state="0" />
+    <frame x="517" y="2" width="1404" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292978" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -807,7 +829,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291714" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24846834" sideWeight="0.6587031" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27117383" sideWeight="0.6587031" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.34129694" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38618523" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18961039" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -888,13 +910,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/dao/base/Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cosyit/lmbbs/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="812">
@@ -1178,13 +1193,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="71" lean-forward="false" selection-start-line="0" selection-start-column="71" selection-end-line="0" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/4ad75d7d/c397ef44-7cf3-4d81-a949-549e5c893e82/lmbbs.lm_user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1231,30 +1239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/link.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="67" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage/sm/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/manage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1279,10 +1263,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/footer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/link.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/commons/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/portal/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="253">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/manage/sm/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="75" column="42" lean-forward="false" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
           <folding />
         </state>
       </provider>

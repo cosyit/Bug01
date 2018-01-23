@@ -1,0 +1,38 @@
+footer{
+    width: 1200px;
+    line-height: 36px;
+    height: 36px;
+    margin:50px auto;
+    text-align: center;
+}
+
+footer .line-left{
+    width: 500px;
+    height: inherit;
+
+    float: left;
+}
+
+
+footer .line-right{
+    width: 500px;
+    height: inherit;
+
+    float: left;
+}
+
+footer .logo-mid{
+    width: 200px;
+    height: inherit;
+    float: left;
+    font-family: mumu;
+
+}
+
+footer ul li {
+    width: 100px;
+    height: inherit;
+    text-align: center;
+    line-height: 36px;
+    float:left;
+}
