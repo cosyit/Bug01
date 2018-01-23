@@ -10,45 +10,6 @@
 <body>
 <%@include file="../../commons/header.jsp"%>
 
-<style>
-    .system_manage{
-        width: 1000px;
-        height:1000px;/*todo delete 暂时支撑而已*/
-        background: lightblue;
-        margin:30px auto;
-    }
-
-
-    .system_manage .catalogs{
-        width: 200px;
-        height: 1000px;
-        background: #f2f2f2;
-    }
-
-    .catalogs li{
-        line-height: 30px;
-        width: 120px;
-        background: cornflowerblue;
-        margin:20px auto;
-        border-radius: 4px;
-        text-align: center;
-
-    }
-    .system_manage .the_content{
-        width: 800px;
-        height: 1000px;
-        background: darkgreen;
-    }
-    .system_manage .Channel_title{
-        width: 800px;
-        line-height: 60px;
-        text-align: center;
-        background: darkcyan;
-    }
-
-</style>
-
-
 <div class="main_body_container">
     <div class="system_manage">
         <ul class="catalogs fl">

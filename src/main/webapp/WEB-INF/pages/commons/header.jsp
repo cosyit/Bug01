@@ -25,14 +25,14 @@
         <div class="hp-navi fl">
             <ul>
                 <li></li>
-                <li>视频</li>
+                <li>首页</li>
                 <li>音乐</li>
-                <li>阅读</li>
+                <li>图书</li>
+                <li>视频</li>
                 <li>博客</li>
                 <li>论坛</li>
-                <li>咨询</li>
-                <li>模块</li>
-                <li>模块</li>
+                <li>艺术</li>
+                <li>服务</li>
                 <li><a href="PortalServlet/smanage">系统</a></li>
             </ul>
         </div>

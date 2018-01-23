@@ -1,7 +1,7 @@
 ﻿﻿header {
     height: 60px;
     width: 100%;
-    background: bisque;
+    background: rgb(179,194,191);
     position:fixed;
     top: 0;left: 0;
     z-index: 99;
@@ -107,7 +107,7 @@ header .header-panel .hp-user ul li {
     top: -60px;
     left: 0;
     width: 100%;
-    z-index: 66;
+    z-index: 102;
 }
 
 
@@ -115,6 +115,6 @@ header .header-panel .hp-user ul li {
 .main_body_container{
     width: 1200px;
     min-height: 100vh;/*todo 高度应该自适应,最小100vh*/
-    background: aliceblue;
+    background: #E9EBE6;/*TODO delete*/
     margin:60px auto;
 }
