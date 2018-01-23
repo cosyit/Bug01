@@ -4,7 +4,6 @@
     <div id="massage_tip">
         <span>  <i class="iconfont icon-sousuo"></i> 请输入用户名 </span>
     </div>
-
 --%>
 <header>
     <div class="header-panel">
@@ -12,8 +11,8 @@
         <!--LOGO-->
         <div class="hp-logo fl"><!--1. LOGO -->
             <a href="PortalServlet/index" class="logo">
-                <img src="images/blogease.png" alt="魔幻博客" width="60" height="56"/>
-                <span>My博客</span>
+                <img src="resources/images/blogease.png" alt="博客" width="66" height="60"/>
+                <span>博客</span>
             </a>
         </div>
 

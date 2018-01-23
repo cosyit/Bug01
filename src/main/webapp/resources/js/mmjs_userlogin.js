@@ -1,9 +1,7 @@
-﻿﻿﻿
-/*$(function () {});*/
-//uncaught ReferenceError: $ is not defined 没找到问题哦！ 找到了！async defer 这个在放在<script标签末尾影响了。
-$(document).ready(function () {
+﻿$(document).ready(function () {
     mmlogin.query_login_status_to_server();
 });
+
 
 var mmMessage={
     tip:function (msg) {
@@ -55,19 +53,17 @@ var mmlogin={
         // off()函数主要用于解除由on()函数绑定的事件处理函数。本段代码让登录框具有
         // 对话框的下一个元素[即dialog_over阴影层]。
         // 在该阴影层上移除事件处理函数后，绑定一个点击事件。
-        // 当被点击时候，执行函数体里的代码：就是登录对话框，add(this)
-        //	添加到this上去。并具有且淡出特效。
+        // 当被点击时候，执行函数体里的代码：就是登录对话框，add(this)[添加到this上去。并具有且淡出特效]
         $("#login_dialog").next().off("click").on("click",function () {
-            //alert(typeof this);
             $("#login_dialog").add(this).fadeOut("slow",function(){
                 $(this).remove();
             });
         });
 
-        $("#login_dialog").find(".submit_btn").off("click").on("click",loginMain);
+        $("#login_dialog").find(".submit_btn").off("click").on("click",logonOpration);
 
         //为了去事件，把点击发送Ajax的函数封装。
-        function loginMain(){
+        function logonOpration(){
             var $this = $(this);
             //执行登录操作。
             var username=$(".username").val();
@@ -107,13 +103,13 @@ var mmlogin={
                 data:params,
                 error:function () {
                     //服务器出错，把登录按钮的事件重新绑定回来。
-                    $this.on("click",loginMain).text("登录").css("background","darkcyan");  //防止登录ING时浪费请求_代码2
-                    // $(this).on("click",loginMain());
+                    $this.on("click",logonOpration).text("登录").css("background","darkcyan");  //防止登录ING时浪费请求_代码2
+                    // $(this).on("click",logonOpration());
                 },
                 cache:false,//如果请求相同的URL ，浏览器就会去取缓存，so
                 success : function(data){
                     //服务器出错和这里[Ajax发回来的时候，再改回来。]
-                    $(".submit_btn").on("click",loginMain).text("登录").css("background","darkcyan");
+                    $(".submit_btn").on("click",logonOpration).text("登录").css("background","darkcyan");
                     if(data=="success"){
                         mmMessage.tip("非常顺利，成功登录 ! 挥洒书写你的新感受吧!");
                         $("#login_dialog").next().trigger('click');//点击它的旁边区域，让登录框消失。
@@ -153,9 +149,6 @@ var mmlogin={
         });
     },
 
-
-
-
     //想登录时弹出的登录框
     wangToLoginView:"<div id='login_dialog'>"+
     "    <div class='mid_position'>"+
@@ -171,7 +164,7 @@ var mmlogin={
     "        </div>"+
     "        <div class='verification m8-w240-h40'>"+
     "            <div class='verify_img fl'>"+
-    "                <img src='images/myblog.png' alt='验证码' width='120' height='32'/>"+
+    "                <img src='resources/images/myblog.png' alt='验证码' width='120' height='32'/>"+
     "            </div>"+
     "            <div class='change_btn fl'>"+
     "                <a href='#'>换图</a>"+

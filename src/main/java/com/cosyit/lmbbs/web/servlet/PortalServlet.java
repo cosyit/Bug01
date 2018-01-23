@@ -56,7 +56,6 @@ public class PortalServlet extends HttpServlet {
 
         //这里是指定浏览器跳转一个页面还是顺水推舟转发一个页面，还是发送Ajax响应呢？转发吧，比较是管理，肯定要服务器去领路的的。
         request.getRequestDispatcher("")
-
     }
 
     private void index(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{

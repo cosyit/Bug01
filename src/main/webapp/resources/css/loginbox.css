@@ -3,7 +3,8 @@
     height: 100%;
     background: rgba(1, 1, 1, .6);
     position: fixed;
-    z-index: 7;
+    top:0;left:0;
+    z-index: 100;
 }
 
 #login_dialog {
@@ -15,7 +16,7 @@
     left: 50%;
     margin-top: -210px;
     margin-left: -180px;
-    z-index: 8;
+    z-index: 101;
 }
 
 #login_dialog .mid_position {

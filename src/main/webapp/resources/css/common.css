@@ -6,6 +6,9 @@
     margin: 0;
 }
 
+body{
+    background: beige;
+}
 ol, ul {
     list-style: none;
 }

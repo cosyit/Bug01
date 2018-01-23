@@ -4,6 +4,7 @@
     background: bisque;
     position:fixed;
     top: 0;left: 0;
+    z-index: 99;
 }
 
 header .header-panel {
@@ -107,4 +108,13 @@ header .header-panel .hp-user ul li {
     left: 0;
     width: 100%;
     z-index: 66;
+}
+
+
+/*header 部分后面的正文部分，网站的整体布局保持一个统一性。所以把header部分也放到了这里。*/
+.main_body_container{
+    width: 1200px;
+    min-height: 100vh;/*todo 高度应该自适应,最小100vh*/
+    background: aliceblue;
+    margin:60px auto;
 }
