@@ -89,7 +89,7 @@ CREATE TABLE `lm_forum` (
   `id` varchar(255) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
-  `myorder` int(11) DEFAULT NULL,
+  `order` int(11) DEFAULT NULL,
   `categoryId` varchar(255) DEFAULT NULL,
   `topicCount` int(11) DEFAULT NULL,
   `articleCount` int(11) DEFAULT NULL,

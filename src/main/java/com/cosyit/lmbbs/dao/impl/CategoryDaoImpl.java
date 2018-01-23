@@ -21,7 +21,7 @@ public class CategoryDaoImpl extends DaoSupport<Category> implements CategoryDao
 		con= JDBCTools.getConn();
 		try {
 			//实例：最大：select max(field1) as maxvalue from table1
-			ps=con.prepareStatement("select max(myorder) from lm_category");
+			ps=con.prepareStatement("select max(`order`) from lm_category");
 			rs=ps.executeQuery();
 			if(rs.next()){
 				maxOrder=rs.getInt(1);

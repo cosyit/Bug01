@@ -51,7 +51,7 @@ var mmlogin={
 
         //对话框对象的下一个next()元素。 off()函数用于移除元素上绑定的一个或多个事件的事件处理函数。
         // off()函数主要用于解除由on()函数绑定的事件处理函数。本段代码让登录框具有
-        // 对话框的下一个元素[即dialog_over阴影层]。
+        // 对话框的下一个元素[即popup_box阴影层]。
         // 在该阴影层上移除事件处理函数后，绑定一个点击事件。
         // 当被点击时候，执行函数体里的代码：就是登录对话框，add(this)[添加到this上去。并具有且淡出特效]
         $("#login_dialog").next().off("click").on("click",function () {
@@ -183,7 +183,7 @@ var mmlogin={
     "    </div>"+
     "</div>"+
     "<!--弹窗遮罩层-->"+
-    "<div class='dialog_over'></div>"
+    "<div class='popup_box'></div>"
     ,
     //未登录视图
     unloggedView:"<li></li>" +

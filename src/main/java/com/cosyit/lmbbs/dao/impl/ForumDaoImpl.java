@@ -20,7 +20,7 @@ public class ForumDaoImpl extends DaoSupport<Forum> implements ForumDao{
 		con= JDBCTools.getConn();
 		try {
 			//实例：最大：select max(field1) as maxvalue from table1
-			ps=con.prepareStatement("select max(myorder) from lm_forum");
+			ps=con.prepareStatement("select max(`order`) from lm_forum");
 			rs=ps.executeQuery();
 			if(rs.next()){
 				maxOrder=rs.getInt(1);

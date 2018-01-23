@@ -38,13 +38,13 @@ public class CategoryServiceImpl implements CategoryService {
 	@Override
 	public int addCategory(Category c) {
 		c.setId(UUID.randomUUID().toString());
-		c.setMyorder(categoryDao.getMaxOrder() + 1);
+		c.setOrder(categoryDao.getMaxOrder() + 1);
 		/*INSERT INTO table_name ( field1, field2,...fieldN )
             VALUES
             ( value1, value2,...valueN );
 */
 		String sql = "insert into lm_category values(?,?,?)";
-		int n = categoryDao.saveOrUpdate(sql, c.getId(), c.getName(), c.getMyorder());
+		int n = categoryDao.saveOrUpdate(sql, c.getId(), c.getName(), c.getOrder());
 		return n;
 
 	}
@@ -88,7 +88,7 @@ public class CategoryServiceImpl implements CategoryService {
 			Category c = new Category();
 			c.setId(rs.getString("id"));
 			c.setName(rs.getString("name"));
-			c.setMyorder(rs.getInt("order"));
+			c.setOrder(rs.getInt("order"));
 			
 			//根据categoryId查询出一组ForumId，通过ForumId来获取
 			Collection<String> forumIds=categoryDao.findForeignId(rs.getString("id"), "select id from lm_forum where categoryId=?");//调用接口的方法，就会调用子类的方法吗？

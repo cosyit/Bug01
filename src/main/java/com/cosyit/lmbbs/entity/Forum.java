@@ -10,7 +10,7 @@ public class Forum implements Serializable{
 	private String id;
 	private String name;
 	private String description;
-	private int myorder;
+	private int order;
 	private Category category;//子版块应该是和主板块是从属关系。java里是一种面向对象的关联关系。
 	private int topicCount;
 	private int articleCount;
@@ -36,11 +36,11 @@ public class Forum implements Serializable{
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public int getMyorder() {
-		return myorder;
+	public int getOrder() {
+		return order;
 	}
-	public void setMyorder(int myorder) {
-		this.myorder = myorder;
+	public void setOrder(int order) {
+		this.order = order;
 	}
 	public Set<Topic> getTopics() {
 		return topics;
@@ -82,12 +82,6 @@ public class Forum implements Serializable{
 	public void setLastTopic(Topic lastTopic) {
 		this.lastTopic = lastTopic;
 	}
-	@Override
-	public String toString() {
-		return "Forum [id=" + id + ", name=" + name + ", description=" + description + ", myorder=" + myorder
-				+ ", category=" + category + ", topicCount=" + topicCount + ", articleCount=" + articleCount
-				+ ", lastTopic=" + lastTopic + ", lastArticlePostTime=" + lastArticlePostTime + ", topics=" + topics
-				+ "]";
-	}
+
 	
 }

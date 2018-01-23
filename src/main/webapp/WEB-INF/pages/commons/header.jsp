@@ -25,7 +25,7 @@
         <div class="hp-navi fl">
             <ul>
                 <li></li>
-                <li>首页</li>
+                <li>版块</li>
                 <li>音乐</li>
                 <li>图书</li>
                 <li>视频</li>

@@ -17,17 +17,18 @@
             <script>
 
             </script>
-            <li><a href="javascript:void(0)" onclick="mmManage.layoutManage()">版面管理</a></li>
+            <%-- mmManage.query_category_list() --%>
+            <li><a href="javascript:void(0)" onclick="mmManage.query_category_list()">版面管理</a></li>
             <li><a href="#">权限管理</a></li>
             <li><a href="#">用户管理</a></li>
             <li><a href="#">文章管理</a></li>
             <li><a href="#">系统设置</a></li>
-
+            <li><a href="#">返回首页</a></li>
             <%--
                         <li><a href="#">视频管理</a></li>
                         <li><a href="#">主题搜索</a></li>
                         <li><a href="#">博客管理</a></li>
-                        <li><a href="#">返回首页</a></li>--%>
+                        --%>
 
         </ul>
         <div class="the_content fr">

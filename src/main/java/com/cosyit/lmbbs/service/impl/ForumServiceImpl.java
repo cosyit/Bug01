@@ -10,7 +10,6 @@ import java.util.UUID;
 import com.cosyit.lmbbs.dao.base.RowMapper;
 import com.cosyit.lmbbs.dao.interfaces.ForumDao;
 import com.cosyit.lmbbs.entity.Forum;
-import com.cosyit.lmbbs.entity.Systemprivilege;
 import com.cosyit.lmbbs.entity.Topic;
 import com.cosyit.lmbbs.service.interfaces.ForumService;
 
@@ -33,9 +32,9 @@ public class ForumServiceImpl implements ForumService {
 	public int addForum(Forum forum,String categoryId) {
 		//id和maxOrder的设定到对象中
 		forum.setId(UUID.randomUUID().toString());
-		forum.setMyorder(fd.getMaxOrder()+1);
+		forum.setOrder(fd.getMaxOrder()+1);
 		int n=fd.saveOrUpdate("insert into lm_forum(id,name,description,myorder,categoryId)values(?,?,?,?,?)", forum.getId(),
-				forum.getName(),forum.getDescription(),forum.getMyorder(),categoryId);
+				forum.getName(),forum.getDescription(),forum.getOrder(),categoryId);
 		return n;
 	}
 	
@@ -57,7 +56,7 @@ public class ForumServiceImpl implements ForumService {
 			forum.setId(rs.getString("id"));//把结果集里拿到的id字段对应的查询结果拿出来设置到对象的id属性中。
 			forum.setName(rs.getString("name"));//同理
 			forum.setDescription(rs.getString("description"));
-			forum.setMyorder(rs.getInt("myorder"));
+			forum.setOrder(rs.getInt("order"));
 			return forum;
 		}
 		
