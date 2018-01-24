@@ -21,7 +21,6 @@ public class EncodingFilter implements Filter {
         request.setCharacterEncoding(encoding);//设置取。request对象不用强转也能调用这些方法。
 
         response.setCharacterEncoding(encoding);//设置printWriter对象的编码方式。
-        System.out.println("编码已完成！");
         chain.doFilter(request, response);
     }
 

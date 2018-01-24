@@ -13,17 +13,17 @@
 <div class="main_body_container">
     <div class="system_manage">
         <ul class="catalogs fl">
-            <li><a href="#">角色管理</a></li>
+            <li><a href="javascript:void(0)">角色管理</a></li>
             <script>
 
             </script>
             <%-- mmManage.query_category_list() --%>
             <li><a href="javascript:void(0)" onclick="mmManage.query_category_list()">版面管理</a></li>
-            <li><a href="#">权限管理</a></li>
-            <li><a href="#">用户管理</a></li>
-            <li><a href="#">文章管理</a></li>
-            <li><a href="#">系统设置</a></li>
-            <li><a href="#">返回首页</a></li>
+            <li><a href="javascript:void(0)">权限管理</a></li>
+            <li><a href="javascript:void(0)">用户管理</a></li>
+            <li><a href="javascript:void(0)">文章管理</a></li>
+            <li><a href="javascript:void(0)">系统设置</a></li>
+            <li><a href="javascript:void(0)">返回首页</a></li>
             <%--
                         <li><a href="#">视频管理</a></li>
                         <li><a href="#">主题搜索</a></li>

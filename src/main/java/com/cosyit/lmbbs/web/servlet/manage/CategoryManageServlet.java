@@ -49,6 +49,22 @@ public class CategoryManageServlet extends HttpServlet {
         } else if ("add_category".equals(action)) {
             addCategory(request, response);
         }
+        else if( "updateCategoryById".equals(action)){
+            updateCategoryById(request,response);
+        }else if("deleteCategoryById".equals(action)){
+            deleteCategoryById(request,response);
+        }
+
+    }
+
+    private void deleteCategoryById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String categoryId = request.getParameter("id");
+        categoryService.deleteCategoryById(categoryId);
+        response.getWriter().print("success");
+    }
+
+    private void updateCategoryById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String categoryId = request.getParameter("id");
 
     }
 

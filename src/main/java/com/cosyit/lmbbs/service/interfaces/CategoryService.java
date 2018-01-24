@@ -43,4 +43,7 @@ public interface CategoryService {
 	 * @return
 	 */
 	public int updateCategory(String id, String name);
+
+
+	public int deleteCategoryById(String id);
 }

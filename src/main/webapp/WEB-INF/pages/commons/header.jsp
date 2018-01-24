@@ -24,6 +24,7 @@
         <!-- 3.导航模块 10占8，两端留白-->
         <div class="hp-navi fl">
             <ul>
+                <%-- javascript:void(0) --%>
                 <li></li>
                 <li>版块</li>
                 <li>音乐</li>

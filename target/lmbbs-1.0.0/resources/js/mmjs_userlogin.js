@@ -167,7 +167,7 @@ var mmlogin={
     "                <img src='resources/images/myblog.png' alt='验证码' width='120' height='32'/>"+
     "            </div>"+
     "            <div class='change_btn fl'>"+
-    "                <a href='#'>换图</a>"+
+    "                <a href='javascript:void(0)'>换图</a>"+
     "            </div>"+
     "        </div>"+
     "        <div class='m8-w240-h40' >"+
@@ -194,7 +194,7 @@ var mmlogin={
 
     //登录视图
     loggedView:"<li><i class='iconfont icon-wodefankui'  style='font-size: 25px'></i></li>" +
-    "<li><a href='可去个人中心' class='login_txtinfo_username'></a></li>" +
+    "<li><a href='javascript:void(0)' class='login_txtinfo_username'></a></li>" +
     "<li><i class='iconfont icon-shouhuodizhiyebianji'  style='font-size: 25px'></i></li>" +
     "<li><a href='javascript:void(0)' onclick='mmlogin.logout()' ><i class='iconfont icon-cuowu'  style='font-size: 25px'></i></a></li>"
 }

@@ -80,7 +80,13 @@ public class CategoryServiceImpl implements CategoryService {
 	public int updateCategory(String id, String name) {
 		return categoryDao.saveOrUpdate("update lm_category set name=?where id=?", name,id);
 	}
-	
+
+	@Override
+	public int deleteCategoryById(String id) {
+
+		return categoryDao.deleteById(id,"delete from lm_category where id = ?");
+	}
+
 	private class CategoryRowMapper implements RowMapper<Category> {
 		@Override
 		public Category readToObjFromDBRow(ResultSet rs) throws SQLException {

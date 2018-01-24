@@ -26,12 +26,13 @@
                         var len = forums.length;
 
                         for (var i = 0; i < len; i++) {
+
                             html += "<tr class='item'>\n" +
                                 "                                <td colspan='3' style='color: #70c7d8; font-weight: bold;'>" + forums[i].name + "</td>\n" +
-                                "                                <td><a href='CategoryManageServlet?method=updateUI&id=" + forums[i].id + "'>修改</a>\n" +
-                                "                                    <a href='#' onclick=''>删除</a>\n" +
-                                "                                    <a href='#'>上移</a>\n" +
-                                "                                    <a href='#'>下移</a>\n" +
+                                "                                <td><a href='javascript:void(0)' onclick='mmManage.update_category()' dataname='"+forums[i].name+"'  dataid='"+forums[i].id+"' id='category_update'>修改</a>\n" +
+                                "                                    <a href='javascript:void(0)' onclick='mmManage.delete_category()' dataname='"+forums[i].name+"'  dataid='"+forums[i].id+"' id='category_delete'>删除</a>\n" +
+                                "                                    <a href='javascript:void(0)'>上移</a>\n" +
+                                "                                    <a href='javascript:void(0)'>下移</a>\n" +
                                 "                                    <!-- 这边向服务器发送请求，服务器的servlet一定是要处理这个请求里的一些业务需要的逻辑的，配合页\n" +
                                 "                                    显示出来的。Servlet中定义addUI方法，addUI的方法里，肯定是要跳转到添加子版面的页面去的。 -->\n" +
                                 "                                    <a href='javascript:void(0)'>添加子版面</a>\n" +
@@ -47,9 +48,9 @@
                                     "                                    <td>+" + forums[i][j].topicCount + "</td>\n" +
                                     "                                    <td>" + forums[i][j].articleCount + "</td>\n" +
                                     "                                    <td><a href='ForumManageServlet?method=updateUI&forumId=" + forums[i][j].id + "'>修改</a>\n" +
-                                    "                                        <a href='#' onclick='delForum('" + forums[i][j].id + "')'>删除</a>\n" +
-                                    "                                        <a href='#'>上移</a>\n" +
-                                    "                                        <a href='#'>下移</a>\n" +
+                                    "                                        <a href='javascript:void(0)' onclick='delForum('" + forums[i][j].id + "')'>删除</a>\n" +
+                                    "                                        <a href='javascript:void(0)'>上移</a>\n" +
+                                    "                                        <a href='javascript:void(0)'>下移</a>\n" +
                                     "                                    </td>\n" +
                                     "                                </tr>";
                             }
@@ -65,10 +66,7 @@
             });
         }
 
-
-
         ,
-
 
     /**
      *
@@ -118,7 +116,7 @@
                         mmMessage.tip("请输入合适的长度的版块名");
                         $(".username").val("").focus();
                     }
-                    if(data == "success"){
+                   else if(data == "success"){
                         mmMessage.tip("添加成功!");
                         $("#login_dialog").next().trigger('click');//点击它的旁边区域，让登录框消失。
 
@@ -127,9 +125,57 @@
                         //更改用户信息。
                     }
                 }
-
             });
         };
+    }
+    ,
+    update_category:function(){
+
+        $.ajax({
+            type:"POST",
+            url:"CategoryManageServlet/updateCategoryById",
+            data:{"id":$("#category_update").attr("dataid")},
+            success:function(){
+               alert(1);
+            }
+
+        });
+
+        //当我点击updata方法按钮时，先发ajax根据id，把值查询到，再值注入到 即将调出的视图。
+        $("body").html("<div id='login_dialog'>"+
+            "    <div class='mid_position'>"+
+            "        <div class='logo m8-w240-h40'></div>"+
+            "        <div class='content_typing_u m8-w240-h40'>"+
+            "            <span class='login_txtinfo'>版名</span><input type='text' class='username login_input_style' name='categoryname'  placeholder='请输入版面名...'>"+
+            "        </div>"+
+            "        <div class='m8-w240-h40' >"+
+            "            <div class='autologins_7days'>"+
+            "                <span>请仔细确认信息</span>"+
+            "            </div>"+
+            "            <div class='submit_btn' onclick='mmManage.query_category_list()'>修改</div>"+
+            "        </div>"+
+            "        <div class='m8-w240-h40'>"+
+            "            <small>立刻充值，权限大升级!</small><a href='javascript:void(0)' style='color: #ff2e1d'>充值</a>"+
+            "        </div>"+
+            "    </div>"+
+            "</div>"+
+            "<!--弹窗遮罩层-->"+
+            "<div class='popup_box'></div>");
+
+
+    }
+    ,
+    delete_category:function(){
+        $.ajax({
+            type:"POST",
+            url:"CategoryManageServlet/deleteCategoryById",
+            data:{"id":$("#category_delete").attr("dataid")},
+            success:function(data){
+                alert(data);
+            }
+
+        });
+
     }
     ,
     wangToAddCategoryView:"<div id='login_dialog'>"+
@@ -145,7 +191,7 @@
     "            <div class='submit_btn' onclick='mmManage.query_category_list()'>添加</div>"+
     "        </div>"+
     "        <div class='m8-w240-h40'>"+
-    "            <small>立刻充值，权限大升级!</small><a href='' style='color: #ff2e1d'>充值</a>"+
+    "            <small>立刻充值，权限大升级!</small><a href='javascript:void(0)' style='color: #ff2e1d'>充值</a>"+
     "        </div>"+
     "    </div>"+
     "</div>"+
