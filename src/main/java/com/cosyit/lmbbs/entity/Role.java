@@ -12,7 +12,7 @@ public class Role implements Serializable{
 	private String description;
 	private boolean defaultForNewUser;
 	private Set<Systemprivilege> systemprivileges;
-	private Set<User> users=new HashSet<User>();
+	private Set<User> users=new HashSet();
 	
 	public String getId() {
 		return id;

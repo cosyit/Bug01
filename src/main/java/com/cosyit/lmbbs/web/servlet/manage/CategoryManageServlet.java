@@ -60,12 +60,12 @@ public class CategoryManageServlet extends HttpServlet {
     private void deleteCategoryById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String categoryId = request.getParameter("id");
         categoryService.deleteCategoryById(categoryId);
-        response.getWriter().print("success");
     }
 
     private void updateCategoryById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String categoryId = request.getParameter("id");
-
+        categoryService.deleteCategoryById(categoryId);
+        response.getWriter().print("success");
     }
 
     private void addCategory(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

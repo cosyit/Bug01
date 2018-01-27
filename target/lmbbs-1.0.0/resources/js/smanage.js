@@ -65,9 +65,7 @@
 
             });
         }
-
         ,
-
     /**
      *
      添加版面做的事情仅仅弹窗即可。无须发送ajax，因为还没输入呢。 todo 我添加更改一起做可行的话，就一起做。先写着试试。
@@ -130,17 +128,16 @@
     }
     ,
     update_category:function(){
+        this;//mmManager
 
         $.ajax({
             type:"POST",
             url:"CategoryManageServlet/updateCategoryById",
-            data:{"id":$("#category_update").attr("dataid")},
+            data:{"id":this.dataid},
             success:function(){
                alert(1);
             }
-
         });
-
         //当我点击updata方法按钮时，先发ajax根据id，把值查询到，再值注入到 即将调出的视图。
         $("body").html("<div id='login_dialog'>"+
             "    <div class='mid_position'>"+
@@ -161,22 +158,57 @@
             "</div>"+
             "<!--弹窗遮罩层-->"+
             "<div class='popup_box'></div>");
-
-
     }
     ,
     delete_category:function(){
-        $.ajax({
+
+        alert(("#category_delete").data("dataid"));
+        alert(("#category_delete").attr("dataid"));
+        alert(this.getAttribute("dataid"));
+        alert($(this).attr("dataid"));
+        alert($(this).data("dataid"));
+
+       /* $.ajax({
             type:"POST",
             url:"CategoryManageServlet/deleteCategoryById",
             data:{"id":$("#category_delete").attr("dataid")},
             success:function(data){
-                alert(data);
+                //alert(data);
             }
 
-        });
+        });*/
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ,
     wangToAddCategoryView:"<div id='login_dialog'>"+
     "    <div class='mid_position'>"+

@@ -42,12 +42,11 @@ public class PortalServlet extends HttpServlet {
 
 
         if(dispatchUrl !=null){
+            System.out.println(1);
             RequestDispatcher rd=request.getRequestDispatcher(dispatchUrl);
             rd.forward(request,response);
         }
     }
-
-
 
 /*
     这种编程风格太过时了。
